@@ -1,0 +1,2378 @@
+{
+  "generated_at": "2026-10-01T17:45:55.218Z",
+  "total_questions": 19,
+  "provider_summary": {
+    "gemini": {
+      "total_requests": 19,
+      "successful_requests": 0,
+      "failed_requests": 19,
+      "failure_rate": 1,
+      "failure_rate_percent": 100
+    },
+    "groq": {
+      "total_requests": 19,
+      "successful_requests": 15,
+      "failed_requests": 4,
+      "failure_rate": 0.21052631578947367,
+      "failure_rate_percent": 21.05
+    },
+    "openai": {
+      "total_requests": 19,
+      "successful_requests": 19,
+      "failed_requests": 0,
+      "failure_rate": 0,
+      "failure_rate_percent": 0
+    }
+  },
+  "benchmark_results": [
+    {
+      "question": "Որո՞նք են օրենքի նպատակները։",
+      "expected_articles": [
+        "1"
+      ],
+      "retrieved_articles": [
+        "1",
+        "24",
+        "6",
+        "3",
+        "16",
+        "2",
+        "36"
+      ],
+      "matched_articles": [
+        "1"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "1",
+          "title": "Հոդված 1.\tՕրենքի նպատակները",
+          "score": 0.8913934230804443
+        },
+        {
+          "article_number": "24",
+          "title": "Հոդված 24.\tԵրաշխիքները",
+          "score": 0.6584667205810547
+        },
+        {
+          "article_number": "6",
+          "title": "Հոդված 6.\tԿարգավորողի իրավասությունները",
+          "score": 0.6374527156352997
+        },
+        {
+          "article_number": "3",
+          "title": "Հոդված 3.\tՕրենքի գործողության շրջանակները",
+          "score": 0.633405613899231
+        },
+        {
+          "article_number": "16",
+          "title": "Հոդված 16.\tՑանցի լիցենզավորման կարգը",
+          "score": 0.6149711847305298
+        },
+        {
+          "article_number": "2",
+          "title": "Հոդված 2.\tՍույն օրենքում օգտագործվող հասկացությունները",
+          "score": 0.6086089849472046
+        },
+        {
+          "article_number": "36",
+          "title": "Հոդված 36.\tԳերիշխող օպերատորի պարտականությունները",
+          "score": 0.5939703822135926
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 16.272539207s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}",
+          "latency_seconds": 0.683,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "**Օրենքի նպատակները (Հոդված 1)**  \n\n1. Նպաստել Հայաստանի Հանրապետության տարածքում էլեկտրոնային հաղորդակցության զարգացմանը.  \n2. Առավելագույնս երաշխավորել արդար և բաց մրցակցություն էլեկտրոնային հաղորդակցության ծառայությունների, միջոցների և սարքավորումների տրամադրման ոլորտներում.  \n3. Ապահովել էլեկտրոնային հաղորդակցության ծառայությունների հասանելիությունը Հայաստանի Հանրապետության ողջ տարածքում.  \n4. Ապահովել էլեկտրոնային հաղորդակցության ծառայություններ օգտագործողների, ցանցերի օպերատորների և ծառայություններ մատուցողների շահերի պաշտպանությունը բաց շուկայական տնտեսության պայմաններում.  \n5. Ապահովել սակագների մակարդակի վերանայումը՝ դրանք առավել մոտեցնելով փաստացի ծախսերին և խթանել ոլորտում գործունեության արդյունավետության բարձրացումը.  \n6. Ապահովել էլեկտրոնային հաղորդակցության ոլորտի արդյունավետ կարգավորումը, ներառյալ արդար և ժամանակին արձագանքումը սպառողների բողոքներին և օրենսդրության արդյունավետ կիրառումը.  \n7. Ապահովել վերջնակետային սարքավորումների թույլտվությունների արդյունավետ պայմանները.  \n8. Ապահովել սահմանափակ ռեսուրսների, ներառյալ ռադիոհաճախականությունների տիրույթի, արբանյակային ուղեծրի հատվածների և համարների, արդյունավետ օգտագործումը.  \n9. Խթանել Հայաստանի Հանրապետությունում էլեկտրոնային հաղորդակցության բնագավառի զարգացումը՝ խրախուսելով տնտեսապես արդյունավետ ներդրումները ենթակառուցվածքում և դրանց օգտագործումը էլեկտրոնային հաղորդակցության ծառայություններ մատուցելու նպատակով.  \n10. Խթանել ժամանակակից տեխնոլոգիաների ներդրումը և ծառայությունների տեսականու ավելացումը.  \n11. Վերոհիշյալ նպատակներն իրականացնել այնպես, որ Հայաստանի Հանրապետությունը կարողանա կատարել էլեկտրոնային հաղորդակցության շուկաների ազատականացման հետ կապված իր միջազգային հանձնառությունները.  \n\n(Հղում՝ Հոդված 1)",
+          "latency_seconds": 1.584,
+          "ttft_seconds": 0.66,
+          "total_response_time_seconds": 1.584,
+          "input_tokens": 6015,
+          "output_tokens": 525,
+          "total_tokens": 6540,
+          "estimated_cost_usd": 0.001217,
+          "cited_articles": [
+            "1"
+          ],
+          "correct_citations": [
+            "1"
+          ],
+          "citation_accuracy": 1,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Սույն օրենքի հիմնական նպատակները՝\n\n1) նպաստել Հայաստանի Հանրապետության տարածքում էլեկտրոնային հաղորդակցության发展的ը;\n\n2) առավելագույնս երաշխավորել արդար և բաց մրցակցություն` էլեկտրոնային հաղորդակցության ծառայությունների, միջոցների և սարքավորումների տրամադրման ոլորտներում;\n\n3) ապահովել էլեկտրոնային հաղորդակցության ծառայությունների հասանելիությունը Հայաստանի Հանրապետության ողջ տարածքում;\n\n4) ապահովել էլեկտրոնային հաղորդակցության ծառայություններ օգտագործողների, էլեկտրոնային հաղորդակցության ցանցերի օպերատորների և էլեկտրոնային հաղորդակցության ծառայություններ մատուցողների շահերի պաշտպանությունը բաց շուկայական տնտեսության պայմաններում;\n\n5) ապահովել սակագների մակարդակի վերանայումը` դրանք առավել մոտեցնելով փաստացի ծախսերին և խթանել ոլորտում գործունեության արդյունավետության բարձրացումը;\n\n6) ապահովել էլեկտրոնային հաղորդակցության ոլորտի արդյունավետ կարգավորումը, ներառյալ` արդար և ժամանակին արձագանքումը սպառողների բողոքներին և օրենսդրության արդյունավետ կիրառումը;\n\n7) ապահովել վերջնակետային սարքավորումների թույլտվությունների արդյունավետ պայմանները;\n\n8) ապահովել սահմանափակ ռեսուրսների, ներառյալ` ռադիոհաճախականությունների տիրույթի, արբանյակային ուղեծրի հատվածների և համարների արդյունավետ օգտագործումը;\n\n9) խթանել Հայաստանի Հանրապետությունում էլեկտրոնային հաղորդակցության բնագավառի զարգացումը` խրախուսելով տնտեսապես արդյունավետ ներդրումները ենթակառուցվածքում և վերջիններիս օգտագործումը էլեկտրոնային հաղորդակցության ծառայություններ մատուցելու նպատակով;\n\n10) խթանել ժամանակակից տեխնոլոգիաների ներդրումը և ծառայությունների տեսականու ավելացումը;\n\n11) կատարեալ իրականացնել վերոհիշյալ նպատակները այնպես, որպեսզի Հայաստանի Հանրապետությունը կարողանա կատարել էլեկտրոնային հաղորդակցության շուկաների ազատականացման հետ կապված իր միջազգային հանձնառությունները:\n\n(Հոդված 1)",
+          "latency_seconds": 7.999,
+          "ttft_seconds": 4.145,
+          "total_response_time_seconds": 7.998,
+          "input_tokens": 5931,
+          "output_tokens": 701,
+          "total_tokens": 6632,
+          "estimated_cost_usd": 0.002885,
+          "cited_articles": [
+            "1"
+          ],
+          "correct_citations": [
+            "1"
+          ],
+          "citation_accuracy": 1,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "Ի՞նչ լիցենզիա է պահանջվում։(Դիմելու կարգը)",
+      "expected_articles": [
+        "15",
+        "10"
+      ],
+      "retrieved_articles": [
+        "10",
+        "42",
+        "16",
+        "13",
+        "64",
+        "11",
+        "15"
+      ],
+      "matched_articles": [
+        "15",
+        "10"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "10",
+          "title": "Հոդված 10.\tԼիցենզիայի և թույլտվությունների համար դիմելու կարգը",
+          "score": 0.7438849985599518
+        },
+        {
+          "article_number": "42",
+          "title": "Հոդված 42.\tՀամար կամ կոդ զբաղեցնելը",
+          "score": 0.6586467862129212
+        },
+        {
+          "article_number": "16",
+          "title": "Հոդված 16.\tՑանցի լիցենզավորման կարգը",
+          "score": 0.6557003378868103
+        },
+        {
+          "article_number": "13",
+          "title": "Հոդված 13.\tԼիցենզիայի և թույլտվության գործողության ժամկետի երկարաձգումը",
+          "score": 0.6385472238063812
+        },
+        {
+          "article_number": "64",
+          "title": "Հոդված 64.\tԱռկա լիցենզիաների պահպանումը",
+          "score": 0.6176805615425109
+        },
+        {
+          "article_number": "11",
+          "title": "Հոդված 11.\tԼիցենզիայում և թույլտվությունում փոփոխությունները",
+          "score": 0.6063075184822082
+        },
+        {
+          "article_number": "15",
+          "title": "Հոդված 15.\tՊահանջվող լիցենզիան",
+          "score": 0.5819177746772766
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 6.06484405s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}",
+          "latency_seconds": 0.494,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "**Պահանջվող լիցենզիա**\n\n- **Ցանցի լիցենզիա** – անհրաժեշտ է այն անձին, ով ցանկանում է տիրապետել և շահագործել հանրային էլեկտրոնային հաղորդակցության ցանց կամ տրամադրել այդ ցանցի վրա ծառայություններ (Հոդված 15, կ.1, կ.2).  \n- **Ռադիոհաճախականության օգտագործման թույլտվություն** – պահանջվում, եթե գործունեությունը ներառում է ռադիոհաճախականությունների (սպեկրադիո, հեռահաղորդակցություն և այլն) օգտագործում (Հոդված 15, կ.1, «լիցենզիա կամ ռադիոհաճախականությունների օգտագործման թույլտվություն»).  \n\n**Դիմելու կարգը (լիցենզիա/թույլտվություն)**  \n\n1. **Դիմումի ներկայացում**  \n   - Դիմումը պետք է ներկայացվի Կարգավորողին՝ այդ մարմնի սահմանած ձևով (Հոդված 10, կ.2).  \n   - Դիմումում պետք է ներառվեն «Լիցենզավորման մասին» Հայաստանի Հանրապետության օրենքի համաձայն պահանջվող բոլոր տեղեկությունները, ինչպես նաև Կարգավորողի կողմից պահանջվող լրացուցիչ տվյալները:  \n   - Դիմումը պետք է ուղեկցվի սահմանված վճարով:  \n\n2. **Հրապարակման և մատչելիության պահանջ**  \n   - Դիմումում նշված տեղեկությունները պետք է լինեն հանրությանը հասանելի (Հոդված 10, կ.2).  \n   - Եթե որոշ տեղեկություններ համարվում են առևտրային գաղտնիք, Կարգավորողը կարող է դրանք չհրապարակել (Հոդված 10, կ.2).  \n\n3. **Աճուրդի (մրցույթի) դեպքում**  \n   - Եթե ռադիոհաճախականության օգտագործման թույլտվության քանակը սահմանափակ է, Կարգավորողը կարող է տրամադրել թույլտվությունները մրցութային դիմումների կամ աճուրդի միջոցով (Հոդված 10, կ.1).  \n   - Աճուրդի դեպքում Կարգավորողը կարող է պահանջել պարտավորագրեր, որոնք երաշխավորում են վճարների կատարման պարտականությունը (Հոդված 10, կ.2).  \n\n4. **Ժամկետներ**  \n   - Կարգավորողը պետք է ձեռնարկի համապատասխան գործողություններ դիմումի ներկայացնելուց վեց շաբաթվա ընթացքում (Հոդված 10, կ.3).  \n   - Եթե կան հիմնավոր պատճառներ, այդ ժամկետը կարող է երկարաձգվել մինչև երեք ամիս (Հոդված 10, կ.3).  \n\n5. **Արդյունքի հրապարակում**  \n   - Աճուրդի կամ մրցույթի արդյունքները պետք է հրապարակվեն՝ համաձայն Կարգավորողի կողմից սահմանված կանոնների, և հայտատուները պետք է ծանուցվեն իրենց վիճակի մասին (Հոդված 10, կ.6‑7).  \n\n**Համառոտում**  \n- Ցանցի լիցենզիա (կամ ռադիոհաճախականության օգտագործման թույլտվություն) է պահանջվում՝ ըստ գործողության բնույթի (Հոդված 15).  \n- Դիմումը պետք է ներկայացվի Կարգավորողին՝ լրացված ձևով, պահանջվող տեղեկություններով, վճարով, և, եթե ռեսուրսները սահմանափակ են, հնարավոր է մասնակցել աճուրդին (Հոդված 10).  \n\n**Հղումներ** – Հոդված 10, Հոդված 15, Հոդված 16 (ցանցի լիցենզավորման կարգը)։",
+          "latency_seconds": 15.171,
+          "ttft_seconds": 13.507,
+          "total_response_time_seconds": 15.171,
+          "input_tokens": 4112,
+          "output_tokens": 1070,
+          "total_tokens": 5182,
+          "estimated_cost_usd": 0.001259,
+          "cited_articles": [
+            "15",
+            "10",
+            "16"
+          ],
+          "correct_citations": [
+            "15",
+            "10"
+          ],
+          "citation_accuracy": 0.667,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Կարճ պատասխան — կախված նրանից, ինչ եք ուզում իրականացնել։\n\n- Եթե ցանկանում եք տիրապետել և շահագործել հանրային էլեկտրոնային հաղորդակցության ցանց՝ Հայաստանում դա պահանջում է ցանցի լիցենզիա (Հոդված 15, մաս 2):  \n- Եթե ցանկանում եք տրամադրել հանրային էլեկտրոնային հաղորդակցության ծառայություններ, դրա համար անհրաժեշտ է ցանցի կամ ծառայություններ մատուցողի լիցենզիա; եթե անձը չունի ցանցի լիցենզիա, ապա Կարգավորողը պարտավոր է պահանջել ծառայություններ մատուցողի լիցենզիա «Լիցենզավորման մասին» օրենքով նախատեսված պարզ ընթացակարգով (Հոդված 15, մասեր 1–3):  \n- Կարգավորողը կարող է ցանցի լիցենզավորման կարգում սահմանել լրացուցիչ պայմաններ (Հոդված 16, մաս 2):  \n- Արդյունքում՝ պահանջվող լիցենզիայի և դրա պայմանների տեսակները սահմանվում են սույն օրենքով և «Լիցենզավորման մասին» օրենքով (Հոդված 15, Հոդված 16):\n\nԴիմելու կարգը (ինչպես ներկայացնել դիմումն և ընթացակարգի առանձնահատկություններ)\n\n- Դիմումը ներկայացվում է Կարգավորողին նրա սահմանած ձևով, պետք է պարունակի «Լիցենզավորման մասին» օրենքով պահանջվող տեղեկությունները և Կարգավորողի կանոններով պահանջվող այլ տեղեկություններ և ուղեկցվի դիմելու համար սահմանված վճարով; դիմումում ընդգրկված տեղեկությունները հասանելի են հանրությանը, բացառությամբ հիմնավորված առևտրային գաղտնիքի դեպքերի (Հոդված 10, մաս 2):  \n- Եթե ռեսուրսների (ռադիոհաճախականությունների և այլն) թվաքանակը սահմանափակ է, Կարգավորողը կարող է թույլտվությունները տրամադրել մրցութային դիմումների կամ աճուրդի միջոցով; աճուրդի դեպքում կարող են պահանջվել պարտավորագրեր՝ վճարումների երաշխավորման համար (Հոդված 10, մաս 1–2):  \n- Ցանցի լիցենզիա ստանալու դիմում կարող է բավարարվել Կարգավորողի կողմից ոչ շուտ, քան դիմումի ներկայացման հանրային ծանուցումից վեց ամիս հետո; Կարգավորողը պետք է դիմումին համապատասխան کارروություններ ձեռնարկի դիմումը ստանալուն համարժեք՝ վեց շաբաթվա ընթացքում, իսկ հիմնավոր պատճառի դեպքում that ժամկետը կարող է երկարիացվել ևս մինչև երեք ամիս (Հոդված 10, մաս 3):  \n- Եթե լիցենզիաներ կամ սահմանափակ ռեսուրսներ հանվում են հրապարակային սակարկության, Կարգավորողը պարտավոր է ընդունել և հրապարակել ոչ խտրական կանոններ, նշել մասնակցության պահանջները և ընդունել հայտերը կանոնների հրապարակումից 90 օրվա ընթացքում; աճուրդի ընթացակարգն ու բողոքարկման ժամկետները՝ ըստ Հոդված 10 (մաս 6–7):  \n- Կարգավորողը պարտավոր է սահմանել և հրապարակել դիմումները քննելու համար անհրաժեշտ ծախսերի հատուցման վճարի չափը (Հոդված 10, մաս 8):\n\nԱմփոփելով՝  \n- ՈՒստի՝ որպես կանոն՝ հանրային ցանցի գործունեության համար պահանջվում է ցանցի լիցենզիա; ծառայությունների մատուցման համար` ցանցի կամ ծառայությունների մատուցողի լիցենզիա (Հոդված 15).  \n- Դիմում է ներկայացվում Կարգավորողին (Կարգավորողի սահմանած ձևով),՝ համապատասխան տեղեկություններով և վճարով; եթե ռեսուրսները սահմանափակ են, հատկացումն իրականացվում է մրցութով կամ աճուրդով՝ Հոդված 10–ի դրույթների համաձայն (Հոդված 10, Հոդված 15, Հոդված 16):  \n- Եթե additionally անհրաժեշտ են համարներ կամ կոդեր, դրանց համար առանձին դիմում է ներկայացվում՝ Հոդված 42-ի կարգով (Հոդված 42):\n\nՀղումներ՝ Հոդված 15, Հոդված 10, Հոդված 16, Հոդված 42, ինչպես նաև՝ Հոդված 11 (լիցենզիայի փոփոխման հարցը) և Հոդված 13 (լիցենզիայի ժամկետի երկարաձգում) երբ առնչվող կլինի:",
+          "latency_seconds": 24.711,
+          "ttft_seconds": 11.047,
+          "total_response_time_seconds": 24.711,
+          "input_tokens": 4028,
+          "output_tokens": 2045,
+          "total_tokens": 6073,
+          "estimated_cost_usd": 0.005097,
+          "cited_articles": [
+            "15",
+            "16",
+            "10",
+            "42",
+            "11",
+            "13"
+          ],
+          "correct_citations": [
+            "15",
+            "10"
+          ],
+          "citation_accuracy": 0.333,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "Որո՞նք են կարգավորողի իրավասությունները։",
+      "expected_articles": [
+        "6"
+      ],
+      "retrieved_articles": [
+        "6",
+        "58",
+        "60",
+        "48",
+        "57",
+        "59",
+        "54"
+      ],
+      "matched_articles": [
+        "6"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "6",
+          "title": "Հոդված 6.\tԿարգավորողի իրավասությունները",
+          "score": 1.10036780834198
+        },
+        {
+          "article_number": "58",
+          "title": "Հոդված 58.\tԴատական կարգով վերանայումը",
+          "score": 0.8335474014282227
+        },
+        {
+          "article_number": "60",
+          "title": "Հոդված 60.\t Դադարեցման կարգադրություն արձակելու իրավասությունը",
+          "score": 0.81412433385849
+        },
+        {
+          "article_number": "48",
+          "title": "Հոդված 48.\tԳծերի վարձակալության ծառայությունները",
+          "score": 0.7843793869018555
+        },
+        {
+          "article_number": "57",
+          "title": "Հոդված 57.\tՎերանայումը",
+          "score": 0.7685205578804016
+        },
+        {
+          "article_number": "59",
+          "title": "Հոդված 59.\tԲողոքների ներկայացումը Կարգավորողին",
+          "score": 0.7676838755607605
+        },
+        {
+          "article_number": "54",
+          "title": "Հոդված 54.\tՕպերատորների և ծառայություններ մատուցողների իրավունքները և պարտականությունները",
+          "score": 0.7550342321395874
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 25.557774421s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '25s'}]}}",
+          "latency_seconds": 0.531,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "**Կարգավորողի իրավասությունները** (Հոդված 6)\n\n1. **Ընդհանուր իրավասություն**՝ իր գործառույթները իրականացնել անհրաժեշտ բոլոր իրավասություններն ունենալը։  \n2. **Նախորոշված հատուկ իրավասությունները**՝  \n   - **Որոշումներ, կանոններ, կարգեր և հրամաններ ընդունել**։  \n   - **Ոչ‑գերիշխող օպերատորների, ոչ‑գերիշխող օպերատորների և վերջնական օգտագործողների միջև, ինչպես նաև ծառայությունների մատուցման մեջ ոչ‑գերիշխողների և վերջնական օգտագործողների միջև վեճեր լուծել**, եթե դա անհրաժեշտ է շուկայում մրցակցությունը, ծառայությունների որակը և ծախսերի հաշվարկված դրույքաչափերը պահպանելու համար։  \n   - **Հանրային լսումներ և նիստեր կազմակերպել** իր գործառույթների վերաբերյալ։  \n   - **Իր գործառույթների կատարման համար անհրաժեշտ տեղեկատվություն ձեռք բերել**։  \n   - **Ուսումնասիրություններ և հետազոտություններ անցկացնել**։  \n   - **Իր որևէ ներկայացուցչին լիազորություն տալ մուտք գործելու այն շենքերը կամ շինությունները**, որոնք օգտագործվում են հանրային էլեկտրոնային հաղորդակցության ծառայությունների մատուցման կամ ցանցի շահագործման համար։  \n   - **Հայաստանի Հանրապետության օրենքներին համապատասխան նախաձեռնել վարչական վարույթ լիցենզավորված անձի նկատմամբ**, օրենսդրության դրույթների չկատարման համար։  \n   - **Էլեկտրոնային հաղորդակցության ոլորտում արդյունավետ համագործակցություն և առավելագույն տնտեսական արդյունավետություն ապահովելու, փոխկապակցման պայմանագրերի սակագները կամ պայմանները հստակեցնելու նպատակով**, սեփական նախաձեռնությամբ կամ կողմերից որևէ մեկի դիմումի հիման վրա, միջամտել վեճերին։  \n   - **Օրենքով նախատեսված դեպքերում վճարներ գանձել**։  \n\n*Այս բոլոր իրավասությունները նշված են Հայաստանի Հանրապետության 6-րդ հոդվածում (Կարգավորողի իրավասությունները).*",
+          "latency_seconds": 19.833,
+          "ttft_seconds": 19.074,
+          "total_response_time_seconds": 19.833,
+          "input_tokens": 4358,
+          "output_tokens": 929,
+          "total_tokens": 5287,
+          "estimated_cost_usd": 0.001211,
+          "cited_articles": [
+            "6"
+          ],
+          "correct_citations": [
+            "6"
+          ],
+          "citation_accuracy": 1,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Կարգավորողը ունի օրենքով իրեն վերապահված անհրաժեշտ իրավասություններ (Հոդված 6, մաս 1):  \n\nՀատկապես՝ Կարգավորողը օժտված է հետևյալ իրավասություններով (Հոդված 6, մաս 2)`\n\n- ընդունել որոշումներ, սահմանել կանոններ, կարգեր և հրամաններ (մաս 2, կետ 1);  \n- լուծել վեճեր ոչ գերիշխող օպերատորների, ոչ գերիշխող օպերատորների և վերջնական օգտագործողների միջև, ինչպես նաև ծառայությունների մատուցման մեջ ոչ գերիշխողների և վերջնական օգտագործողների միջև՝ շուկայում մրցակցությունը, ծառայությունների որակը և ծախսերի վրա հիմնված դրույքաչափերը պահպանելու նպատակով (մաս 2, կետ 2);  \n- կազմակերպել իր գործառույթների վերաբերյալ հանրային լսningar և նիստեր (մաս 2, կետ 3);  \n- ձեռք բերել իր գործառույթների կատարմանը առնչվող տեղեկատվություն (մաս 2, կետ 4);  \n- անցկացնել ուսումնասիրություններ և հետազոտություններ (մաս 2, կետ 5);  \n- լիազորել ներկայացուցչին մուտք գործել հանրային էլեկտրոնային հաղորդակցության ծառայությունների մատուցման կամ ցանցի շահագործման համար օգտագործվող շենքերը/շինությունները (մաս 2, կետ 6);  \n- նախաձեռնել վարչական վարույթ լիցենզավորված անձի նկատմամբ օրենքի պահանջները չկատարելու դեպքերում (մաս 2, կետ 7);  \n- սեփական նախաձեռնությամբ կամ կողմերից որևէ մեկի դիմումի հիման վրա միջամտել վեճերին՝ արդյունավետ համագործակցություն և առավելագույն տնտեսական արդյունավետություն ապահովելու, փոխկապակցման պայմանագրերի սակագները կամ պայմանները հստակեցնելու նպատակով (մաս 2, կետ 8);  \n- օրենքով նախատեսված դեպքերում գանձել վճարներ (մաս 2, կետ 9):\n\nՏվյալ իրավասություններից օգտվելիս՝ Կարգավորողը կարող է իր հայեցողությամբ որոշել կիրառվող լսման կամ վարույթի ձևը և ապահովել կողմերի իրավունքը ներկայացնելու ապացույցներ (Հոդված 6, մաս 3); պարտավոր է յուրաքանչյուր որոշման գրավոր հիմնավորում ներկայացնել (Հոդված 6, մաս 4); կարող է կազմակերպել վեճերի լուծումը գործարար շրջանառության սովորույթների և արդարադատության սկզբունքների համաձայն և սահմանել առաջնահերթություններ ու ռեսուրսների բաշխումը (Հոդված 6, մաս 5):\n\nԸնդ որում, Կարգավորողը ունի նաև իրավասություն դադարեցման կարգադրություն արձակելու՝ չլիցենզավորված հանրային էլեկտրոնային հաղորդակցության ցանց կամ ծառայություններ հայտնաբերելու դեպքում (Հոդված 60, մաս 1 և հաջորդները):",
+          "latency_seconds": 17.51,
+          "ttft_seconds": 10.592,
+          "total_response_time_seconds": 17.51,
+          "input_tokens": 4274,
+          "output_tokens": 1394,
+          "total_tokens": 5668,
+          "estimated_cost_usd": 0.003857,
+          "cited_articles": [
+            "6",
+            "60"
+          ],
+          "correct_citations": [
+            "6"
+          ],
+          "citation_accuracy": 0.5,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "Ի՞նչ հասկացողություններ է սահմանում սույն օրենքը։",
+      "expected_articles": [
+        "2"
+      ],
+      "retrieved_articles": [
+        "2",
+        "63",
+        "3",
+        "1",
+        "24",
+        "6",
+        "61"
+      ],
+      "matched_articles": [
+        "2"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "2",
+          "title": "Հոդված 2.\tՍույն օրենքում օգտագործվող հասկացությունները",
+          "score": 0.6402106761932373
+        },
+        {
+          "article_number": "63",
+          "title": "Հոդված 63.\tՏույժերը և տուգանքները",
+          "score": 0.6151412129402161
+        },
+        {
+          "article_number": "3",
+          "title": "Հոդված 3.\tՕրենքի գործողության շրջանակները",
+          "score": 0.6099611520767212
+        },
+        {
+          "article_number": "1",
+          "title": "Հոդված 1.\tՕրենքի նպատակները",
+          "score": 0.562512993812561
+        },
+        {
+          "article_number": "24",
+          "title": "Հոդված 24.\tԵրաշխիքները",
+          "score": 0.560515284538269
+        },
+        {
+          "article_number": "6",
+          "title": "Հոդված 6.\tԿարգավորողի իրավասությունները",
+          "score": 0.5589543581008911
+        },
+        {
+          "article_number": "61",
+          "title": "Հոդված 61.\tԻրավախախտումները, որոնց համար կարող են նախատեսվել պատժամիջոցներ",
+          "score": 0.548643946647644
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 41.434192182s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '41s'}]}}",
+          "latency_seconds": 6.723,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "**Սույն օրենքը սահմանում է հետևյալ հասկացողությունները (Հոդված 2):**\n\n- փոխկապակցված անձ  \n- սիրողական ռադիո  \n- իրավասու մարմին  \n- ռադիոկանչի նշան  \n- տեղադրում  \n- Կարգավորող  \n- գերիշխող օպերատոր  \n- ծառայությունների մատուցման մեջ գերիշխող  \n- էլեկտրոնային հաղորդակցության ցանց  \n- էլեկտրոնային հաղորդակցության ծառայություն  \n- հաճախորդ կամ բաժանորդ  \n- վերջնական օգտագործող  \n- ռադիոհաճախականության օգտագործման թույլտվություն  \n- նույնացման (իդենտիֆիկացման) կոդ  \n- պատմականորեն գերիշխող օպերատոր կամ ծառայությունների մատուցման մեջ պատմականորեն գերիշխող  \n- փոխկապակցում  \n- ինտերնետ հասանելիություն  \n- ինտերնետային ծառայություն մատուցող  \n- վարձակալված գիծ  \n- լիցենզավորված անձ  \n- գծի ենթակառուցվածք  \n- թվային շարք  \n- համարի կամ կոդերի զբաղեցում  \n- օպերատոր  \n- ցանցի լիցենզիա  \n- անձ  \n- ծառայություն մատուցողի լիցենզիա  \n- հանրային էլեկտրոնային հաղորդակցության ցանց  \n- հանրային էլեկտրոնային հաղորդակցության ծառայություն  \n- իրական ժամանակ կամ գրեթե իրական ժամանակ  \n- կարճ կոդ կամ ծառայության կոդ  \n- ծառայություններ մատուցող  \n- ձայնային ծառայություն  \n- սակագին  \n- վերջնակետային սարքավորում  \n\n(Հոդված 2)",
+          "latency_seconds": 29.609,
+          "ttft_seconds": 28.854,
+          "total_response_time_seconds": 29.609,
+          "input_tokens": 6299,
+          "output_tokens": 789,
+          "total_tokens": 7088,
+          "estimated_cost_usd": 0.001418,
+          "cited_articles": [
+            "2"
+          ],
+          "correct_citations": [
+            "2"
+          ],
+          "citation_accuracy": 1,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Սույն օրենքը սահմանում է հետևյալ հասկացողությունները (Հոդված 2)`\n\n- փոխկապակցված անձ  \n- սիրողական ռադիո  \n- իրավասու մարմին  \n- ռադիոկանչի նշան  \n- տեղադրում  \n- Կարգավորող  \n- գերիշխող օպերատոր  \n- ծառայությունների մատուցման մեջ գերիշխող  \n- էլեկտրոնային հաղորդակցության ցանց  \n- էլեկտրոնային հաղորդակցության ծառայություն  \n- հաճախորդ կամ բաժանորդ  \n- վերջնական օգտագործող  \n- ռադիոհաճախականության օգտագործման թույլտվություն  \n- նույնացման (իդենտիֆիկացման) կոդ  \n- պատմականորեն գերիշխող օպերատոր կամ ծառայությունների մատուցման մեջ պատմականորեն գերիշխող  \n- փոխկապակցում  \n- ինտերնետ հասանելիություն  \n- ինտերնետային ծառայություն մատուցող  \n- վարձակալված գիծ  \n- լիցենզավորված անձ  \n- գծի ենթակառույց  \n- թվային σειρά  \n- համարի կամ կոդերի զբաղեցում  \n- օպերատոր  \n- ցանցի լիցենզիա  \n- անձ  \n- ծառայություն մատուցողի լիցենզիա  \n- հանրային էլեկտրոնային հաղորդակցության ցանց  \n- հանրային էլեկտրոնային հաղորդակցության ծառայություն  \n- իրական ժամանակ կամ գրեթե իրական ժամանակ  \n- կարճ կոդ կամ ծառայության կոդ  \n- ծառայություններ մատուցող  \n- ձայնային ծառայություն  \n- սակագին  \n- վերջնակետային սարքավորում\n\n(Հղում՝ Հոդված 2)",
+          "latency_seconds": 7.392,
+          "ttft_seconds": 4.799,
+          "total_response_time_seconds": 7.391,
+          "input_tokens": 6215,
+          "output_tokens": 988,
+          "total_tokens": 7203,
+          "estimated_cost_usd": 0.00353,
+          "cited_articles": [
+            "2"
+          ],
+          "correct_citations": [
+            "2"
+          ],
+          "citation_accuracy": 1,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "Ի՞նչպիսին է ցանցի լիցենզավորման կարգը։",
+      "expected_articles": [
+        "16"
+      ],
+      "retrieved_articles": [
+        "16",
+        "5",
+        "44",
+        "17",
+        "64",
+        "15",
+        "39"
+      ],
+      "matched_articles": [
+        "16"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "16",
+          "title": "Հոդված 16.\tՑանցի լիցենզավորման կարգը",
+          "score": 0.7590023756027222
+        },
+        {
+          "article_number": "5",
+          "title": "Հոդված 5.\tԿարգավորողի գործառույթները",
+          "score": 0.7106929063796997
+        },
+        {
+          "article_number": "44",
+          "title": "Հոդված 44.\tՎերջնակետային սարքավորումները",
+          "score": 0.6781583428382874
+        },
+        {
+          "article_number": "17",
+          "title": "Հոդված 17.\tՌադիոհաճախականությունների տիրույթի հատկացումը",
+          "score": 0.6327635884284973
+        },
+        {
+          "article_number": "64",
+          "title": "Հոդված 64.\tԱռկա լիցենզիաների պահպանումը",
+          "score": 0.6103118300437927
+        },
+        {
+          "article_number": "15",
+          "title": "Հոդված 15.\tՊահանջվող լիցենզիան",
+          "score": 0.588803106546402
+        },
+        {
+          "article_number": "39",
+          "title": "Հոդված 39.\tՏեղադրումը",
+          "score": 0.5855370163917542
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 3.824610189s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '3s'}]}}",
+          "latency_seconds": 0.549,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "**Ցանցի լիցենզավորման կարգը** (Հոդված 16)\n\n- **Կարգավորողը** լիցենզիա տրամադրելու գործընթացում պետք է հաշվի առնի հետևյալ պահանջները՝  \n  1. Դիմողի **տեխնիկական որակավորում** և **ֆինանսական հնարավորություններ** (Հ.16.1.1);  \n  2. Սույն օրենքի և «Լիցենզավորման մասին» օրենքի **նպատակները** (Հ.16.1.2);  \n  3. **Համընդհանուր ծառայությունների** ապահովման նպաստումը (Հ.16.1.3);  \n  4. **Վերջնական օգտագործողների** շահերի պաշտպանությունը (Հ.16.1.4);  \n  5. **Մրցակցության** երաշխավորումը ցանցերի և ծառայությունների տրամադրողների միջև (Հ.16.1.5);  \n  6. **Գիտահետազոտական‑առաջադիմական** աշխատանքների և նոր ծառայությունների ներդրման խթանումը (Հ.16.1.6);  \n  7. **Օտարերկրյա և տեղացի ներդրողների** խրախուսումը (Հ.16.1.7);  \n  8. **Հանրային շահի և ազգային անվտանգության** պաշտպանությունը (Հ.16.1.8).\n\n- **Լիցենզիա տրամադրելու պայմանների** սահմանման ժամանակ, հանրային շահերից ելնելով, **Կարգավորողը կարող է** (համապատասխանաբար) ավելացնել **լրացուցիչ պայմաններ** (Հ.16.2).\n\nԱյսպիսով, ցանցի լիցենզավորման կարգը սահմանված է՝՝ Կարգավորողը՝ վերոնշյալ չափանիշները և պահանջները հաշվի առնելով, տրամադրում է լիցենզիա, իսկ անհրաժեշտության դեպքում, հանրային շահի համար, կարող է սահմանել լրացուցիչ պայմաններ։ (Հոդված 16)",
+          "latency_seconds": 31.948,
+          "ttft_seconds": 31.061,
+          "total_response_time_seconds": 31.948,
+          "input_tokens": 4725,
+          "output_tokens": 585,
+          "total_tokens": 5310,
+          "estimated_cost_usd": 0.00106,
+          "cited_articles": [
+            "16"
+          ],
+          "correct_citations": [
+            "16"
+          ],
+          "citation_accuracy": 1,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Ցանցի լիցենզավորման կարգը հետևյալն է։\n\n- Լիցենզիա տրամադրելու կարգը սահմանելիս Կարգավորողը հաշվի է առնում տեխնիկական եւ ֆինանսական որակավորումը, օրենքների նպատակները, համընդհանուր ծառայությունների ապահովումը, օգտվողների շահերի պաշտպանությունը, մրցակցության երաշխավորումը, հետազոտական-ռազմատարածքային և ներդրումային նպատակները, հանրային եւ ազգային անվտանգության հետաքրքրությունները և այլն (խтурушված կետեր՝ Հոդված 16։1) (ՀՑ.՝ Հոդված 16։1)։\n\n- Կարգավորողը կարող է հանրային շահից ելնելով լիցենզավորման կարգում սահմանել լրացուցիչ պայմաններ (Հոդված 16։2)։\n\n- Հավաքական պահանջ. ցանցի լիցենզիա պարտադիր է հանրային էլեկտրոնային հաղորդակցության ցանց տիրապետելու եւ այն շահագործելու համար՝ սույն օրենքով եւ «Լիցենզավորման մասին» ՀՀ օրենքով սահմանված ընթացակարգերով (Հոդված 15։1–2)։ Եթե անձը չունի ցանցի լիցենզիա, նրան պահանջվում է ծառայություններ մատուցողի լիցենզիա (Հոդված 15։3)։\n\n- Եթե ցանցի շահագործումը պահանջում է ռադիոհաճախականությունների օգտագործում, պահանջվում է համապատասխան թույլտվություն` եւ այդ հաճախականությունները Կարգավորողն է հատկացնում՝ սահմանված կանոնների և տեխնիկական, ֆինանսական և իրավական պահանջների համաձայն; Կարգավորողը կարող է համաժամարկելով ընդունել դիմում ցանցի լիցենզիայի և ռադիոհաճախականությունների թույլտվության համար (Հոդված 17։1–5)։\n\n- Կարգավորողը պարտավոր է հաստատել լիցենզիայի դիմելու, տրամադրելու, փոփոխելու, կասեցնելու և դադարեցնելու ընթացակարգերը, չափանիշները և պահանջները, ինչպես նաև հաշվետվության, որակի և այլ կարգավորիչ պահանջները (այդ նպատակով մանրամասն իրավունքներ և պարտականություններ նշված են Հոդված 5-ում) (Հոդված 5։2 (բ, ե, ը և այլ ենթակետեր))։\n\n- Արդեն գործող լիցենզիաները պահպանվում են սույն օրենքի կետերում սահմանված կարգով (Հոդված 64։1)։\n\n(ՀԱՇՎԻՑ՝ Հոդված 16, Հոդված 15, Հոդված 17, Հոդված 5 և Հոդված 64)",
+          "latency_seconds": 10.549,
+          "ttft_seconds": 4.886,
+          "total_response_time_seconds": 10.549,
+          "input_tokens": 4641,
+          "output_tokens": 988,
+          "total_tokens": 5629,
+          "estimated_cost_usd": 0.003136,
+          "cited_articles": [
+            "16",
+            "15",
+            "17",
+            "5",
+            "64"
+          ],
+          "correct_citations": [
+            "16"
+          ],
+          "citation_accuracy": 0.2,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "Սակագները կարգավորումը և դրույքաչափեր։",
+      "expected_articles": [
+        "27",
+        "28",
+        "29"
+      ],
+      "retrieved_articles": [
+        "29",
+        "39",
+        "28",
+        "34",
+        "27",
+        "48",
+        "37"
+      ],
+      "matched_articles": [
+        "27",
+        "28",
+        "29"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "29",
+          "title": "Հոդված 29.\tՍակագների դրույքաչափերի առանձնահատկությունը",
+          "score": 0.7603284239768981
+        },
+        {
+          "article_number": "39",
+          "title": "Հոդված 39.\tՏեղադրումը",
+          "score": 0.5786166429519654
+        },
+        {
+          "article_number": "28",
+          "title": "Հոդված 28.\tՍակագների հրապարակային ներկայացումը",
+          "score": 0.5359768509864807
+        },
+        {
+          "article_number": "34",
+          "title": "Հոդված 34.\tՓոխկապակցման թույլատրելի մեխանիզմները",
+          "score": 0.5337240338325501
+        },
+        {
+          "article_number": "27",
+          "title": "Հոդված 27.\tՍակագների կարգավորումը",
+          "score": 0.5152296543121337
+        },
+        {
+          "article_number": "48",
+          "title": "Հոդված 48.\tԳծերի վարձակալության ծառայությունները",
+          "score": 0.5122795045375824
+        },
+        {
+          "article_number": "37",
+          "title": "Հոդված 37.\tՓոխկապակցման վճարների հիմքում ընկած սկզբունքները",
+          "score": 0.49070014953613283
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 20.830859227s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}",
+          "latency_seconds": 0.433,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "**Սակագների (տարածքային գների) կարգավորումը և դրույքաչափերը**  \n\n- **Կարգավորողը**  \n  - Սահմանում և կարգավորում է գերիշխողների և ոչ‑գերիշխողների կողմից մատուցվող հանրային էլեկտրոնային հաղորդակցության ծառայությունների սակագները (հոդված 27, կ.1‑4).  \n  - Կարող է սահմանել առավելագույն սակագները և ընտրել համապատասխան կարգավորման մեթոդները (հոդված 27, կ.6).  \n\n- **Սակագների դրույքաչափերի առանձնահատկությունները** (հոդված 29)  \n  1. Սակագները պետք է լինեն հստակ նշված, առանց խաչաձև հղումներից, և հասկանալի (կ.1).  \n  2. Դրանք պետք է կապված լինեն կոնկրետ ծառայության տեսակի հետ (կ.2).  \n  3. Սակագները պետք է սահմանեն միավորները (օրինակ՝ գծի թողունակություն, ժամանակ, արագություն), որոնց հիման վրա հաշվարկվում է վճարը (կ.3).  \n  4. Դրանք պետք է հնարավորինս առանձնացված լինեն մրցակցային կանոններով (կ.4).  \n  5. Դրույքաչափերը պետք է հիմնվեն միայն վերջնական օգտագործողների կողմից պահանջված հանրային էլեկտրոնային հաղորդակցության ծառայությունների կապակցությամբ կրած թույլատրելի ծախսերի վրա, հաշվի առնելով 27-րդ հոդվածի չորրորդ մասի անցումային ժամկետները (կ.5).  \n  6. Սակագների և դրանց վճարման վերաբերյալ բոլոր տեղեկատվությունները պետք է նախապես և ամբողջությամբ հրապարակվեն (կ.6).  \n\n- **Սակագների հրապարակային ներկայացումը** (հոդված 28)  \n  - Բոլոր ծառայություն մատուցողները պետք է ներկայացնեն և հրապարակեն աղյուսակներ, որտեղ արտացոլված են սակագները, դասակարգումները և պայմանները (կ.1).  \n  - Սակագները ուժի մեջ են մտնում Կարգավորողի հաստատումից հետո, կամ, եթե հաստատում չի լինի, ներկայացնելու օրվանից 45-րդ օրից (կ.2).  \n  - Եթե սակագնը խախտում է օրենքի որևէ դրույթ, Կարգավորողը կարող է այն փոփոխել կամ կասեցնել առավելագույնը 90 օր (կ.3).  \n\n- **Սակագների կարգավորման գործընթացը** (հոդված 27)  \n  - Կարգավորողը կարող է կարգավորել ոչ‑գերիշխողների սակագները, եթե դա անհրաժեշտ է մրցակցությունը և հանրային շահերը պաշտպանելու համար (կ.2).  \n  - Ինտերնետ հասանելիության համար գանձվող սակագները Կարգավորողը **չի** կարող կարգավորել (կ.2).  \n  - Կարգավորողը պետք է պահանջի և խրախուսի սակագների վերանայում, որպեսզի դրանք մոտեցեն փաստացի ծախսերին (կ.4‑5).  \n\n- **Համապատասխանություն և վերահսկում**  \n  - Սակագների կարգավորման մեթոդները, գագաթների սահմանափակումները և առավելագույն սակագները պետք է ընտրվեն Կարգավորողի հայեցողությամբ (հոդված 27, կ.6).  \n  - Սակագների հաշվարկների և ծախսերի մեթոդների թափանցիկություն, հրապարակություն և հստակ բաժանարարություն պարտադիր են (հոդված 37, կ.4‑5).  \n\n**Ամփոփում**  \nՍակագները կարգավորվում են Կարգավորողի կողմից՝ համաձայն հոդված 27‑ի, իսկ դրանց դրույքաչափերը պետք է համապատասխանի հոդված 29-ի պահանջներին՝ հստակություն, կոնկրետություն, միավորների սահմանում, մրցակցային առանձնացում, ծախսերի հիմք և նախապես հրապարակում: Սակագների հրապարակային ներկայացումը և հնարավոր փոփոխությունները կարգավորվում են հոդված 28-ի դրույթներով։",
+          "latency_seconds": 31.011,
+          "ttft_seconds": 29.09,
+          "total_response_time_seconds": 31.011,
+          "input_tokens": 4883,
+          "output_tokens": 1033,
+          "total_tokens": 5916,
+          "estimated_cost_usd": 0.001352,
+          "cited_articles": [
+            "27",
+            "29",
+            "28",
+            "37"
+          ],
+          "correct_citations": [
+            "27",
+            "29",
+            "28"
+          ],
+          "citation_accuracy": 0.75,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Ահա համառոտ բացատրությունը՝ սակագներին (սակագների կարգավորմանը) և դրույքաչափերին վերաբերող իրավական կարգավորման հիմնական դրույթների մասին՝ բացառապես տրամադրված օրենքի հիման վրա.\n\n- Ո՞վ և ինչ է կարգավորում սակագները\n  - Կարգավորողը սահմանում և կարգավորում է կարգավորման ենթակա հանրային էլեկտրոնային հաղորդակցության ծառայությունների սակագները, հատկապես գերիշխողների կողմից մատուցվող ծառայությունների պարագայում (Հոդված 27.1):  \n  - Կարգավորողը կարող է կարգավորել ոչ գերիշխողների սակագները միայն մրցակցության և հանրային շահի պաշտպանության անհրաժեշտության դեպքում, բայց ոչ՝ ինտերնետ մատչելիության համար ինտերնետ ծառայություններ մատուցողի գանձվող սակագները (Հոդված 27.2):  \n  - Կարգավորողը կարող է նաև սահմանել համընդհանուր ծառայությունների սակագները (Հոդված 27.3): (Հղում՝ Հոդված 27)\n\n- Կարգավորման նպատակներ և պահանջներ օպերատորների համար\n  - Կարգավորողը պարտավոր է պահանջել ու խրախուսել սակագների վերանայում՝ դրանք առավելագույնս մոտեցնելու փաստացի ծախսերին՝ հաշվի առնելով չերրորդ մասի պահանջները և սահմանել խելամիտ անցումային ժամկետներ (Հոդված 27.4, Հոդված 29.5):  \n  - Կարգավորողը իրավունք ունի պահանջել ծառայությունների և սակագների հիմնավորման տեղեկատվություն և ընտրել կիրառելի կարգավորման մեթոդներ; կարող է սահմանել առավելագույն սակագներ (Հոդված 27.5-6): (Հղում՝ Հոդված 27)\n\n- Սակագնի դրույքաչափերի առանձնահատկությունները\n  - Կարգավորվող սակագները պետք է լինեն հստակ ու ըմբռնելի, բացառելով խաչաձև հղումները ոչ կարգավորող փաստաթղթերին (Հոդված 29.1):  \n  - Սակագները պետք է կապված լինեն ծառայության կոնկրետ տեսակի և սահմանեն հաշվարկման միավորները (օր.՝ թողունակություն, ժամանակ, արագություն) (Հոդված 29.2-3):  \n  - Սակագները պետք է հնարավորինս առանձնացված լինեն կարգավորողի կողմից սահմանված մրցակցային կանոններով (Հոդված 29.4):  \n  - Դրույքաչափերը պետք է հիմնված լինեն միայն վերջնական օգտագործողների կողմից պահանջված ծառայությունների տրամադրման սպասավորողական թույլատրելի ծախսերի վրա՝ հաշվի առնելով վերանայման համար սահմանված անցումային ժամկետները (Հոդված 29.5):  \n  - Պետք է նախօրոք և ամբողջությամբ հրապարակվի հատուցման ենթակա գումարների և վճարման վերաբերյալ ցանկացած տեղեկատվություն (Հոդված 29.6): (Հղում՝ Հոդված 29)\n\n- Սակագների հրապարակումն ու ուժի մեջ մտնելը\n  - Կարգավորվող ծառայություններ մատուցողները պարտավոր են Կարգավորողին ներկայացնել և հրապարակել սակագների աղյուսակները՝ Կարգավորողի կանոնակարգերով սահմանված ձևով (Հոդված 28.1):  \n  - Սակագինը ուժի մեջ է մտնում Կարգավորողի կողմից հաստատվելուց հետո. եթե Կարգավորողը առարկություններ չունի՝ այն ուժի է մտնում ներկայացումից 45 օր հետո (Հոդված 28.2):  \n  - Եթե Կարգավորողը հայտնաբերում է օրենքի խախտում, նա կարող է սակագինը փոխել կամ առավելագույնը 90 օրով կասեցնել նրա (կամ նրա մասի) գործողությունը՝ այդ ընթացքում ուսումնասիրելով հիմնավորումը (Հոդված 28.3): (Հղում՝ Հոդված 28)\n\n- Փոխկապակցման և դրա դրույքաչափերի օրինաչափություններ\n  - Փոխկապակցման վճարները ծածկում են փոխկապակցված ցանցերի ծախսերը, ենթակառուցվածքի վարձակալությունը, ընթացիկ համատեղ աշխատունակության ապահովման և ուղարկվող ծավալների հետ կապված վճարները, ինչպես նաև հավելյալ ծառայությունների դիմաց վճարները (Հոդված 37.1):  \n  - Վճարները սահմանվում են տվյալ ծառայության երկարաժամկետ կուտակային ծախսերի և ապագայում նախատեսվող ծախսերի ողջամիր տեղաբաշխման հիման վրա` ներառելով հավասար փոխկապակցման ծախսեր, պահանջների կատարումից բխող ծախսեր ու կապիտալի ողջամիտ ծախսեր; ոչ ավել քան անհրաժեշտ գումարը՝ նշված ծախսերը ծածկելու համար (Հոդված 37.2):  \n  - Գերիշխող օպերատորները պարտավոր են հաշվարկել վճարները հիմնարար սկզբունքներով՝ որ ծախսերը կրի այն կողմը, որի գծով ծախսը առաջացել է; ոչ ընթացիկ/ցուցիչ ծախսերի համապատասխան հատուցում; օգտագործումից կախվա և անկախ ծախսերի տարբերակում և այլն; եթե բավարար ծախսային տվյալներ չկան՝ Կարգավորողը կարող է կիրառել համեմատելի միջազգային ցուցանիշներ (Հոդված 37.3, 37.6):  \n  - Վճարները պետք է լինեն թափանցիկ և հրապարակային, վճարների բաղադրիչները և ծախսերի հաշվարկման մեթոդները պետք է հրապարակվեն; գերիշխողը պետք է ցուցաբերի համապատասխանությունը (Հոդված 37.4, 37.6): (Հղում՝ Հոդված 37)\n\n- Մյուս համապատասխան կարգավորումներ\n  - Փոխկապակցման օրինաչափությունները, պայմանները և հնարավոր պայմանագրերը կարգավորվում են ըստ 34-րդ հոդվածի դրույթների (փոխկապակցման օրինակելի առաջարկներ, պայմանագրերի վերահսկում, Կարգավորողի դեր) (Հոդված 34):  \n  - Սարքավորումների տեղադրումը օպերատորի տարածքում պետք է ապահովվի ողջամիտ դրույքաչափերով, տեղադրման մեջ ներառվում է տարածք, էլեկտրաէներգիա և խաչաձև կապակցում (Հոդված 39):  \n  - Գծերի վարձակալության ծառայությունների սակագիները և պայմանները պետք է ընդգրկեն տեխնիկական ստանդարտները, ծառայության մատուցման ժամկետները, աշխարհագրական ծածկույթը, պահպանման և անսարքությունների կարգն, ծառայությունների դիմաց գանձվող վճարները և վճարման կարգը, և օպերատորը չի կարող պայմանավորել այդ ծառայությունը վերջնական օգտագործողի օգտագործման բնույթով (Հոդված 48): (Հղում՝ Հոդված 34, Հոդված 39, Հոդված 48)\n\nԵթե ցանկանում եք, կարող եմ կարճագիր և ֆոկուսավորված պատասխան կազմել մասնավորապես`\n- Կարգավորողի իրավունքներն ու պարտականությունները սակագների սահմանման գործում,\n- Փոխկապակցման վճարների հաշվարկի սկզբունքները (ավելի կոնկրետ՝ ինչպես բաժանել ծախսերը՝ ըստ 37-րդ հոդվածի),\n- Սակագների հրապարակման ընթացակարգը (ստանդարտ տեքստ՝ համապատասխան պահանջներով) — նշեք, թե որ ուղղությամբ եք ուզում ընդլայնում։",
+          "latency_seconds": 23.593,
+          "ttft_seconds": 8.03,
+          "total_response_time_seconds": 23.593,
+          "input_tokens": 4799,
+          "output_tokens": 2381,
+          "total_tokens": 7180,
+          "estimated_cost_usd": 0.005962,
+          "cited_articles": [
+            "27",
+            "29",
+            "28",
+            "37",
+            "34",
+            "39",
+            "48"
+          ],
+          "correct_citations": [
+            "27",
+            "29",
+            "28"
+          ],
+          "citation_accuracy": 0.429,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "Ռադիոհաճախականությունների տիրույթի հատկացումը և օգտագործումը։",
+      "expected_articles": [
+        "17",
+        "19"
+      ],
+      "retrieved_articles": [
+        "17",
+        "19",
+        "64",
+        "5",
+        "4",
+        "10",
+        "18"
+      ],
+      "matched_articles": [
+        "17",
+        "19"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "17",
+          "title": "Հոդված 17.\tՌադիոհաճախականությունների տիրույթի հատկացումը",
+          "score": 1.014611053466797
+        },
+        {
+          "article_number": "19",
+          "title": "Հոդված 19.\tՌադիոհաճախականությունների օգտագործումը",
+          "score": 0.8816618919372559
+        },
+        {
+          "article_number": "64",
+          "title": "Հոդված 64.\tԱռկա լիցենզիաների պահպանումը",
+          "score": 0.7274748921394348
+        },
+        {
+          "article_number": "5",
+          "title": "Հոդված 5.\tԿարգավորողի գործառույթները",
+          "score": 0.7206294178962708
+        },
+        {
+          "article_number": "4",
+          "title": "Հոդված 4.\tԻրավասու մարմնի կամ մարմինների գործառույթները",
+          "score": 0.6582497000694275
+        },
+        {
+          "article_number": "10",
+          "title": "Հոդված 10.\tԼիցենզիայի և թույլտվությունների համար դիմելու կարգը",
+          "score": 0.6238382697105408
+        },
+        {
+          "article_number": "18",
+          "title": "Հոդված 18.\tԱռկա օգտագործողները",
+          "score": 0.6215379774570465
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 25.553539497s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '25s'}]}}",
+          "latency_seconds": 0.59,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "**Ռադիոհաճախականությունների տիրույթի հատկացումը**\n\n- **Թույլտվության պահանջ**. Եթե էլեկտրոնային հաղորդակցության ցանցի շահագործման կամ ծառայություն մատուցելու համար անհրաժեշտ է ռադիոհաճախականությունների օգտագործում, ապա այդ ցանցը կամ ծառայությունը չի կարող օգտագործվել առանց համապատասխան թույլտվության (Հոդված 17, կ.1)։  \n- **Ռադիոհաճախականությունների հատկացում**. Կարգավորողը, համաձայն 10-րդ հոդվածի և «Լիցենզավորման մասին» օրենքի, պետք է հատկացնել ռադիոհաճախականությունները՝ նպատակների իրականացման համար (Հոդված 17, կ.2).  \n- **Թույլտվությունների հրավեր և տրամադրում**. Կարգավորողը կարող է հայտարարել ռադիոհաճախականության օգտագործման թույլտվությունների դիմումներ ստանալու հրավեր (Հոդված 17, կ.3) և իրավունք ունի տրամադրել այդ թույլտվությունները՝ անձանց, ովքեր ունեն կամ կարող են ստանալ ցանցի լիցենզիա (Հոդված 17, կ.4).  \n- **Թույլտվությունների տրամադրման կարգը**. Կարգավորողը, խորհրդակցելով իրավասու մարմնի հետ, պետք է սահմանի ռադիոհաճախականությունների օգտագործման թույլտվությունների տրման կարգը, ներառյալ հատկացման մեթոդները, տեխնիկական, ֆինանսական և իրավական պահանջները (Հոդված 17, կ.5).  \n\n**Ռադիոհաճախականությունների օգտագործումը**\n\n- **Պարտավորություններ**. Ռադիոհաճախականության օգտագործման թույլտվություն ունեցող յուրաքանչյուր անձ պետք է կատարի այդ թույլտվության պայմանները և Կարգավորողի հրահանգները (Հոդված 19).  \n\n**Լիցենզիայի և թույլտվության կապը**\n\n- **Լիցենզիա/թույլտվություն**. Օրինակի օրինակում, եթե անձն ունի լիցենզիա կամ ռադիոհաճախականությունների օգտագործման թույլտվություն, այն համարվում է, որ նա այդ ցանցը շահագործում, ծառայություն մատուցում կամ ռադիոհաճախականություններն օգտագործում է օրենքի շրջանակներում (Հոդված 64, կ.1).  \n\n**Կարգավորողի գործառույթները (Ռադիոհաճախականությունների տիրույթի հետ կապված)**\n\n- Կարգավորողը պետք է խթանի ռադիոհաճախականությունների, արբանյակային ուղեծրի հատվածների և համարային ռեսուրսների արդյունավետ օգտագործումը, ապահովելով դրանց արդյունավետ կառավարումը (Հոդված 5, կ.1, դ).  \n\n**Ամփոփում**\n\nՌադիոհաճախականությունների տիրույթի հատկացումը և օգտագործումը իրականացվում է՝  \n1. Ստանալ համապատասխան օգտագործման թույլտվություն (Հոդված 17, կ.1‑4).  \n2. Կարգավորողը հատկացնում է ռադիոհաճախականությունները, սահմանում է տրամադրման և օգտագործման կանոնները (Հոդված 17, կ.2‑5, 5).  \n3. Թույլտվություն ունեցողը պետք է հետևի Կարգավորողի հրահանգներին (Հոդված 19).  \n4. Լիցենզիա կամ թույլտվություն ունեցողը գործի մեջ է, եթե այդ փաստաթղթեր կան (Հոդված 64).  ",
+          "latency_seconds": 27.155,
+          "ttft_seconds": 25.609,
+          "total_response_time_seconds": 27.155,
+          "input_tokens": 5833,
+          "output_tokens": 838,
+          "total_tokens": 6671,
+          "estimated_cost_usd": 0.001378,
+          "cited_articles": [
+            "17",
+            "19",
+            "64",
+            "5"
+          ],
+          "correct_citations": [
+            "17",
+            "19"
+          ],
+          "citation_accuracy": 0.5,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Կարճ ամփոփմամբ՝ ռադիոհաճախականությունների տիրույթի հատկացման եւ օգտագործման հիմնական սկզբունքներն ու կանոնակարգումը ըստ տրամադրված օրենքի.\n\n- Հատկացում\n  - Կարգավորողը պետք է առանձնացնի ռադիոհաճախականությունները համապատասխան նպատակների համար և դրանք հատկացնի առանձին օգտագործողներին՝ ըստ այս օրենքի և «Լիցենզավորման մասին» օրենքի նորմերի (Հոդված 17.2):  \n    (Հղում՝ Հոդված 17.2)\n  - Կարգավորողը կարող է հայտարարություններ տալ թույլտվությունների համար դիմումներ ընդունելու նպատակով և կարող է ռադիոհաճախականության թույլտվություններ տրամադրել ռադիոհաճախականության տիրույթի որոշակի հատվածների օգտագործման համար (Հոդված 17.3–17.4):  \n    (Հղում՝ Հոդված 17.3, 17.4)\n  -Եթե ռեսուրսները սահմանափակ են, թույլտվությունները տրվում են մրցույթով կամ աճուրդով, եւ դիմումների/աճորդների կարգը, հրապարակումը, արժանացումն ու պայմանները կարգավորում է Կարգավորողը ըստ Հոդված 10-ի պահանջների (Հոդված 10.1–10.7):  \n    (Հղում՝ Հոդված 10)\n  - Կարգավորողը պարտավոր է սահմանել ռադիոհաճախականությունների օգտագործման թույլտվությունների տրման կարգը՝ որոշելով հատկացման մեթոդները և դիմողներին ներկայացվող տեխնիկական, ֆինանսական և իրավական պահանջները (Հոդված 17.5):  \n    (Հղում՝ Հոդված 17.5)\n  - Ազգային հաճախականությունների բաշխման աղյուսակի հաստատումն ու փոփոխությունները կատարում է իրավասու մարմինը՝ խորհրդակցելով Կարգավորողի հետ (Հոդված 4.2–4.3):  \n    (Հղում՝ Հոդված 4.2, 4.3)\n  - Կարգավորողը նաեւ պարտավոր է մշակել կանոններ չլիցենզավորված՝ ցածր հզորությամբ սարքերի (բացարձակապես նշված տեսակների) թույլատրելիության վերաբերյալ և այդ կանոնները հանրայայտ դարձնել մեկ տարվա ընթացքում սույն օրենքի գործողության սկսելուց հետո (Հոդված 17.2):  \n    (Հղում՝ Հոդված 17.2)\n  - Կարգավորողը պետք է պահի եւ հրապարակէ ռադիոհաճախականություններն օգտագործելու թույլտվություն ունեցող անձանց գրանցամատյանը (համապատասխանության դեպքում՝ չխախտելով անվտանգության պահանջները) (Հոդված 5):  \n    (Հղում՝ Հոդված 5, հատուկ իգ/իգ ենթակըտոր)\n\n- Օգտագործում\n  - Ռադիոհաճախականություններն օգտագործելու համար անձը պարտավոր է ունենալ համապատասխան օգտագործման թույլտվություն. առանց նրա ցանցը շահագործել կամ ծառայություն մատուցել չի կարելի (Հոդված 17.1):  \n    (Հղում՝ Հոդված 17.1)\n  - Թույլտվության տերը պարտավոր է կատարել թույլտվության պայմանները և Կարգավորողի կողմից տրված հրահանգները (Հոդված 19):  \n    (Հղում՝ Հոդված 19)\n  - Կարգավորողն ունի պարտականություններ՝ ռադիոհաճախականությունների նպատակային և արդյունավետ օգտագործումը կազմակերպելու (պլանավորումն, համակարգումը, նպատակային օգտագործման ապահովումը) եւ իրավունք՝ առանց թույլտվության օգտագործումը դադարեցնելու (բացառությամբ պետական մարմինների) (Հոդված 5, մասերի համապատասխան ենթակետեր):  \n    (Հղում՝ Հոդված 5, մասնավորապես 3-րդ մասի առանձին ենթակետեր)\n  - Իրավասու մարմինը (կառավարական) իրավունք ունի հայտնաբերելու ու տեղորոշելու օրենսակի պահանջներին չհամապատասխանող ճառագայթման աղբյուրները և համապատասխան գործողություններ իրականացնելու (Հոդված 4.5–4.6): ոչ պետական աղբյուրների դեպքում այն տեղեկացնում է Կարգավորողին, որպեսզի վերջինս ձեռնարկի համապատասխան քայլեր՝ այդ թվում թույլտվությունների կասեցում/դադարեցում և տույժեր (Հղում՝ Հոդված 4.6):  \n    (Հղում՝ Հոդված 4.5–4.6)\n  - Նախկինում ուժի մեջ եղած ռադիոհաճախականությունների օգտագործման թույլտվությունները և լիցենզիաները մնում են ուժի մեջ իրենց գործողության վաղվան ամբողջ ընթացքում; գոյություն ունեն նաեւ հատկապես պատմական գերիշխող օպերատորների իրավունքների հատուկ պահպանություններ (Հոդված 18; Հոդված 64.1–64.3):  \n    (Հղում՝ Հոդված 18; Հոդված 64.1–64.3)\n  - Իրավասու մարմինը կարող է սահմանել տեխնիկական ստանդարտներ եւ սերտիֆիկացիոն պահանջներ ռադիոհաղորդիչ սարքավորումների նկատմամբ՝ վնասակար միջամտությունների կանխման նպատակով (Հոդված 4.9–4.10):  \n    (Հղում՝ Հոդված 4.9–4.10)\n\nԵթե ցանկանում եք, կարող եմ տրամադրել ավելի մանրամասն ընթացակարգային բացատրություն (օրինակ՝ ինչ տեղեկություններ պետք է առկա լինեն դիմումներում, աճուրդի կարգը կամ սահմանված ժամկետները)՝ հիմնվելով վերոնշյալ հոդվածների համապատասխան մասերի վրա:",
+          "latency_seconds": 26.096,
+          "ttft_seconds": 15.074,
+          "total_response_time_seconds": 26.095,
+          "input_tokens": 5749,
+          "output_tokens": 2484,
+          "total_tokens": 8233,
+          "estimated_cost_usd": 0.006405,
+          "cited_articles": [
+            "17",
+            "10",
+            "4",
+            "5",
+            "19",
+            "18",
+            "64"
+          ],
+          "correct_citations": [
+            "17",
+            "19"
+          ],
+          "citation_accuracy": 0.286,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "Տեղեկության գաղտնիությունը",
+      "expected_articles": [
+        "49"
+      ],
+      "retrieved_articles": [
+        "49",
+        "60",
+        "14",
+        "28",
+        "64",
+        "53",
+        "50"
+      ],
+      "matched_articles": [
+        "49"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "49",
+          "title": "Հոդված 49.\tՀաճախորդների տեղեկությունների գաղտնիությունը",
+          "score": 0.8024611949920655
+        },
+        {
+          "article_number": "60",
+          "title": "Հոդված 60.\t Դադարեցման կարգադրություն արձակելու իրավասությունը",
+          "score": 0.5295834541320801
+        },
+        {
+          "article_number": "14",
+          "title": "Հոդված 14.\tԼիցենզավորված անձանց նկատմամբ հսկողության փոխանցումը",
+          "score": 0.5187273025512695
+        },
+        {
+          "article_number": "28",
+          "title": "Հոդված 28.\tՍակագների հրապարակային ներկայացումը",
+          "score": 0.49251115322113037
+        },
+        {
+          "article_number": "64",
+          "title": "Հոդված 64.\tԱռկա լիցենզիաների պահպանումը",
+          "score": 0.48160645365715027
+        },
+        {
+          "article_number": "53",
+          "title": "Հոդված 53.\tՏեղեկատու ծառայությունները",
+          "score": 0.4787036180496216
+        },
+        {
+          "article_number": "50",
+          "title": "Հոդված 50.\tՄիջամտություն, ձայնագրում կամ հաղորդագրությունների բացահայտում",
+          "score": 0.4650108516216278
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 31.713687516s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}",
+          "latency_seconds": 0.533,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "**Տեղեկության գաղտնիությունը** կարգավորվում է **49-րդ հոդվածում**.\n\n- **Հաճախորդների տեղեկությունների գաղտնիություն**  \n  - Յուրաքանչյուր օպերատոր և ծառայություններ մատուցողը պարտավոր է պահել գաղտնի՝ հաճախորդի օգտագործած ծառայությունների տեսակը, վայրը, նպատակը, նպատակակետը, քանակը և տեխնիկական պայմանները (հոդված 49, պ.1).  \n- **Բացահայտման թույլատրելի դեպքեր** (հոդված 49, պ.2):  \n  1. Օրենքով նախատեսված և կարգով սահմանված դեպքերում, օրինակ՝ քրեական հանցագործության, ազգային անվտանգության հետ կապված հետախուզման, հետաքննության կամ քրեական հետապնդման համար;  \n  2. Հաճախորդի գրավոր համաձայնությամբ;  \n  3. Օպերատորի կամ ծառայություններ մատուցողի պաշտպանության համար, եթե բացահայտումը անհրաժեշտ է (հաճախորդը կարող է պահանջել, որ բացահայտումը կատարվի «գաղտնիության կարգով», օրինակ՝ դռնփակ վարույթների միջոցով).  \n- **Պատասխանատվություն**  \n  - Օպերատորը կամ ծառայություններ մատուցողը **չի կրում պատասխանատվություն** բացահայտման հետևանքով առաջացած վնասների համար (հոդված 49, պ.3).\n\n**Արդյունք**՝ Օպերատորները և ծառայություններ մատուցողները պետք է պահեն հաճախորդների տվյալները գաղտնի, բացահայտելով դրանք միայն վերոնշյալ սահմանված դեպքերում և առանց պատասխանատվության՝ բացահայտման պատճառով առաջացած վնասների համար: (հղում՝ 49-րդ հոդված)",
+          "latency_seconds": 1.375,
+          "ttft_seconds": 0.579,
+          "total_response_time_seconds": 1.375,
+          "input_tokens": 2957,
+          "output_tokens": 518,
+          "total_tokens": 3475,
+          "estimated_cost_usd": 0.000754,
+          "cited_articles": [
+            "49"
+          ],
+          "correct_citations": [
+            "49"
+          ],
+          "citation_accuracy": 1,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Օպերատորների և ծառայություններ մատուցողների վերաբերյալ տեղեկությունների գաղտնիության կանոնները՝ համառոտ.\n\n- Առանձնանում են որպես գաղտնի պահվող տեղեկություններ՝ հաճախորդների կողմից օգտագործված ծառայությունների տեսակը, տեղը, նպատակը, նպատակակետի, քանակը և տեխնիկական պայմանները. (Հոդված 49.1)\n\n- Այս ոչ հանրայնացնելու սկզբունքը խախտվում է միայն սույն հոդվածում նախատեսված դեպքերում՝ երբ օպերատորը կամ ծառայություններ մատուցողը կարող է բացահայտել այդ տեղեկությունները՝\n  - օրենքով նախատեսված դեպքերում և կարգով՝ քրեական հետախուզության, հետաքննության կամ քրեական հետապնդման կամ ազգային անվտանգության սպառնալիքի առնչությամբ,\n  - հաճախորդի գրավոր համաձայնությամբ,\n  - եթե բացահայտումը անհրաժեշտ է օպերատորի/ծառայություններ մատուցողի պաշտպանության համար (օրինակ՝ դատարանային վարույթների դեպքում). Հաճախորդը կարող է պահանջել, որպեսզի այդ բացահայտումը իրականացվի գաղտնիության կարգով՝ դռնփակ վարույթների միջոցով։ (Հոդված 49.2.1–3)\n\n- Օպերատորը կամ ծառայություններ մատուցողը պատասխանատվություն չի կրում սույն հոդվածի 2-րդ մասի համաձայն տեղեկությունների բացահայտման հետևանքով պատճառված վնասի համար։ (Հոդված 49.3)\n\n- Հաղորդագրությունների միջամտությունը, ձայնագրումն կամ դրանց պարունակության բացահայտումը ոչ կողմ համարվող անձի կողմից թույլատրվում է միայն տվյալ հաղորդագրության կողմերի գրավոր համաձայնությամբ կամ դատարանի որոշմամբ՝ օրենքով նախատեսված դեպքերում և կարգով։ (Հոդված 50.1)\n\n- Օպերատորներն ու ծառայություններ մատուցողները կարող են միջամտել կամ վերահասցեագրել հաղորդագրություններ/ ազդանշաններ առանց դրանց պարունակությունը բացահայտելու, եթե դա պայմանավորված է իրենց աշխատանքային պարտականություններով։ (Հոդված 50.2)\n\n- Օրենքով նախատեսված դեպքերում բոլոր օպերատորները և ծառայություններ մատուցողները պարտավոր են ապահովել իրավապահ և ազգային անվտանգության աշխատակիցների մուտքը հաղորդակցության սարքավորումներին և այնպիսի սարքերին, որոնք անհրաժեշտ են գաղտնալսումների իրականացման համար։ (Հոդված 50.3)\n\n(Ըստ՝ Հոդված 49 և Հոդված 50)",
+          "latency_seconds": 9.935,
+          "ttft_seconds": 4.972,
+          "total_response_time_seconds": 9.935,
+          "input_tokens": 2873,
+          "output_tokens": 1024,
+          "total_tokens": 3897,
+          "estimated_cost_usd": 0.002766,
+          "cited_articles": [
+            "49",
+            "50"
+          ],
+          "correct_citations": [
+            "49"
+          ],
+          "citation_accuracy": 0.5,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "What are the purposes of the law?",
+      "expected_articles": [
+        "1"
+      ],
+      "retrieved_articles": [
+        "1",
+        "24",
+        "6",
+        "2",
+        "16",
+        "3",
+        "36"
+      ],
+      "matched_articles": [
+        "1"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "1",
+          "title": "Հոդված 1.\tՕրենքի նպատակները",
+          "score": 0.7599352836608887
+        },
+        {
+          "article_number": "24",
+          "title": "Հոդված 24.\tԵրաշխիքները",
+          "score": 0.6346956729888916
+        },
+        {
+          "article_number": "6",
+          "title": "Հոդված 6.\tԿարգավորողի իրավասությունները",
+          "score": 0.6212632298469544
+        },
+        {
+          "article_number": "2",
+          "title": "Հոդված 2.\tՍույն օրենքում օգտագործվող հասկացությունները",
+          "score": 0.6018760442733765
+        },
+        {
+          "article_number": "16",
+          "title": "Հոդված 16.\tՑանցի լիցենզավորման կարգը",
+          "score": 0.5982004344463349
+        },
+        {
+          "article_number": "3",
+          "title": "Հոդված 3.\tՕրենքի գործողության շրջանակները",
+          "score": 0.5792031288146973
+        },
+        {
+          "article_number": "36",
+          "title": "Հոդված 36.\tԳերիշխող օպերատորի պարտականությունները",
+          "score": 0.5674543917179108
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 19.763833847s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}",
+          "latency_seconds": 0.583,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "**Օրենքի նպատակները (Հոդված 1):**\n\n- Նպաստել Հայաստանի Հանրապետության տարածքում էլեկտրոնային հաղորդակցության զարգացմանը։  \n- Առավելագույնս երաշխավորել արդար և բաց մրցակցություն էլեկտրոնային հաղորդակցության ծառայությունների, միջոցների և սարքավորումների տրամադրման ոլորտներում։  \n- Ապահովել էլեկտրոնային հաղորդակցության ծառայությունների հասանելիությունը Հայաստանի Հանրապետության ողջ տարածքում։  \n- Ապահովել էլեկտրոնային հաղորդակցության ծառայություններ օգտագործողների, ցանցերի օպերատորների և ծառայություններ մատուցողների շահերի պաշտպանությունը բաց շուկայական տնտեսության պայմաններում։  \n- Ապահովել սակագների մակարդակի վերանայումը՝ դրանք առավել մոտեցնելով փաստացի ծախսերին և խթանել ոլորտում գործունեության արդյունավետության բարձրացումը։  \n- Ապահովել էլեկտրոնային հաղորդակցության ոլորտի արդյունավետ կարգավորումը, ներառյալ արդար և ժամանակին արձագանքումը սպառողների բողոքներին և օրենսդրության արդյունավետ կիրառումը։  \n- Ապահովել վերջնակետային սարքավորումների թույլտվությունների արդյունավետ պայմանները։  \n- Ապահովել սահմանափակ ռեսուրսների, ներառյալ ռադիոհաճախականությունների տիրույթ, արբանյակային ուղեծրի հատվածների և համարների, արդյունավետ օգտագործումը։  \n- Խթանել Հայաստանի Հանրապետությունում էլեկտրոնային հաղորդակցության բնագավառի զարգացումը, խրախուսելով տնտեսապես արդյունավետ ներդրումները ենթակառուցվածքում և դրանց օգտագործումը էլեկտրոնային հաղորդակցության ծառայություններ մատուցելու նպատակով։  \n- Խթանել ժամանակակից տեխնոլոգիաների ներդրումը և ծառայությունների տեսականու ավելացումը։  \n- Վերոհիշյալ նպատակներն իրականացնել այնպես, որ Հայաստանը կարողանա կատարել էլեկտրոնային հաղորդակցության շուկաների ազատականացման հետ կապված իր միջազգային հանձնառությունները։  \n\n(Հղում՝ **Հոդված 1**)",
+          "latency_seconds": 37.849,
+          "ttft_seconds": 36.957,
+          "total_response_time_seconds": 37.849,
+          "input_tokens": 6011,
+          "output_tokens": 533,
+          "total_tokens": 6544,
+          "estimated_cost_usd": 0.001221,
+          "cited_articles": [
+            "1"
+          ],
+          "correct_citations": [
+            "1"
+          ],
+          "citation_accuracy": 1,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Օրենքի նպատակներն են՝ (Հոդված 1)\n\n- նպաստել Հայաստանի Հանրապետության տարածքում էլեկտրոնային հաղորդակցության զարգացմանը;\n- առավելագույնս երաշխավորել արդար և բաց մրցակցություն՝ էլեկտրոնային հաղորդակցության ծառայությունների, միջոցների և սարքավորումների տրամադրման ոլորտներում;\n- ապահովել էլեկտրոնային հաղորդակցության ծառայությունների հասանելիությունը Հայաստանի Հանրապետության ողջ տարածքում;\n- ապահովել էլեկտրոնային հաղորդակցության ծառայություններ օգտագործողների, էլեկտրոնային հաղորդակցության ցանցերի օպերատորների և էլեկտրոնային հաղորդակցության ծառայություններ մատուցողների շահերի պաշտպանությունը բաց շուկայական տնտեսության պայմաններում;\n- ապահովել սակագնի մակարդակի վերանայումը՝ դրանք առավել մոտեցնելով փաստացի ծախսերին և խթանել ոլորտում գործունեության արդյունավետության բարձրացումը;\n- ապահովել էլեկտրոնային հաղորդակցության ոլորտի արդյունավետ կարգավորումը, ներառյալ՝ արդար և ժամանակին արձագանքը սպառողների բողոքներին և օրենսդրության արդյունավետ կիրառումը;\n- ապահովել վերջնակետային սարքավորումների թույլտվությունների արդյունավետ պայմանները;\n- ապահովել սահմանափակ ռեսուրսների, ներառյալ՝ ռադիոհաճախականությունների տիրույթի, արբանյակի ուղեծրի հատվածների և համարների արդյունավետ օգտագործումը;\n- խթանել Հայաստանում էլեկտրոնային հաղորդակցության բնագավառի զարգացումը՝ խրախուսելով տնտեսապես արդյունավետ ներդրումները ենթակառուցվածքում և դրանց օգտագործումը էլեկտրոնային հաղորդակցության ծառայություններ մատուցելու համար;\n- խթանել ժամանակակից տեխնոլոգիաների ներդրումը և ծառայությունների տեսականու ավելացումը;\n- վերոհիշյալ նպատակներն իրականացնել այնպես, որպեսզի Հայաստանը կարողանա կատարել էլեկտրոնային հաղորդակցության շուկաների ազատականացման հետ կապված իր միջազգային հանձնառությունները։",
+          "latency_seconds": 10.401,
+          "ttft_seconds": 6.447,
+          "total_response_time_seconds": 10.401,
+          "input_tokens": 5927,
+          "output_tokens": 995,
+          "total_tokens": 6922,
+          "estimated_cost_usd": 0.003472,
+          "cited_articles": [
+            "1"
+          ],
+          "correct_citations": [
+            "1"
+          ],
+          "citation_accuracy": 1,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "What license is required for providing electronic communications services?",
+      "expected_articles": [
+        "15"
+      ],
+      "retrieved_articles": [
+        "17",
+        "5",
+        "16",
+        "42",
+        "15",
+        "64",
+        "54"
+      ],
+      "matched_articles": [
+        "15"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "17",
+          "title": "Հոդված 17.\tՌադիոհաճախականությունների տիրույթի հատկացումը",
+          "score": 0.6891285419464112
+        },
+        {
+          "article_number": "5",
+          "title": "Հոդված 5.\tԿարգավորողի գործառույթները",
+          "score": 0.6636236548423767
+        },
+        {
+          "article_number": "16",
+          "title": "Հոդված 16.\tՑանցի լիցենզավորման կարգը",
+          "score": 0.6115936875343323
+        },
+        {
+          "article_number": "42",
+          "title": "Հոդված 42.\tՀամար կամ կոդ զբաղեցնելը",
+          "score": 0.6022881209850312
+        },
+        {
+          "article_number": "15",
+          "title": "Հոդված 15.\tՊահանջվող լիցենզիան",
+          "score": 0.5928637325763703
+        },
+        {
+          "article_number": "64",
+          "title": "Հոդված 64.\tԱռկա լիցենզիաների պահպանումը",
+          "score": 0.5823538541793823
+        },
+        {
+          "article_number": "54",
+          "title": "Հոդված 54.\tՕպերատորների և ծառայություններ մատուցողների իրավունքները և պարտականությունները",
+          "score": 0.5765884459018707
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 30.868166112s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}",
+          "latency_seconds": 0.549,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "Էլեկտրոնային հաղորդակցության ծառայություններ մատուցելու համար անհրաժեշտ է **ցանցի լիցենզիա** կամ, եթե անձը չունի ցանցի լիցենզիա, **ծառայություններ մատուցողի լիցենզիա**՝ «Լիցենզավորման մասին» Հայաստանի Հանրապետության օրենքով սահմանված պարզ լիցենզավորման ընթացակարգի համաձայն։  \n\n- **Հոդված 15, պարբերություն 2‑4**.  \n  - 2-րդ պարբերությունում նշված է, որ առանց «ցանցի լիցենզիա» անձը չի կարող տիրապետել և շահագործել հանրային էլեկտրոնային հաղորդակցության ցանցը։  \n  - 3-րդ պարբերությունում նշված է, որ առանց ցանցի կամ ծառայությունների մատուցման լիցենզիայի անձը չի կարող տրամադրել էլեկտրոնային հաղորդակցության ծառայություններ, և այդ դեպքում պետք է ստանա ծառայություններ մատուցողի լիցենզիա՝ «Լիցենզավորման մասին» օրենքի պարզ լիցենզավորման ընթացակարգին համապատասխան։  \n\nԱյսպիսով, էլեկտրոնային հաղորդակցության ծառայություններ մատուցելու համար պահանջվում է կամ ցանցի լիցենզիա, կամ, եթե ցանցի լիցենզիա չունի, ծառայություններ մատուցողի լիցենզիա։",
+          "latency_seconds": 33.626,
+          "ttft_seconds": 33.025,
+          "total_response_time_seconds": 33.626,
+          "input_tokens": 5551,
+          "output_tokens": 490,
+          "total_tokens": 6041,
+          "estimated_cost_usd": 0.001127,
+          "cited_articles": [
+            "15"
+          ],
+          "correct_citations": [
+            "15"
+          ],
+          "citation_accuracy": 1,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Պետք է ունենալ ցանցի կամ ծառայություններ մատուցողի լիցենզիա (կամ համապատասխանաբար ցանցի լիցենզիա ցանցի տիրապետելու/շահագործելու համար): ըստ ՀՕԵՀ՝ հոդված 15-ի 2-րդ և 3-րդ մասեր (հատկապես 3-րդ մասը).",
+          "latency_seconds": 5.674,
+          "ttft_seconds": 4.874,
+          "total_response_time_seconds": 5.674,
+          "input_tokens": 5467,
+          "output_tokens": 437,
+          "total_tokens": 5904,
+          "estimated_cost_usd": 0.002241,
+          "cited_articles": [
+            "15"
+          ],
+          "correct_citations": [
+            "15"
+          ],
+          "citation_accuracy": 1,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "What are the powers of the regulator?",
+      "expected_articles": [
+        "6"
+      ],
+      "retrieved_articles": [
+        "6",
+        "4",
+        "54",
+        "48",
+        "60",
+        "2",
+        "34"
+      ],
+      "matched_articles": [
+        "6"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "6",
+          "title": "Հոդված 6.\tԿարգավորողի իրավասությունները",
+          "score": 0.9381849050521851
+        },
+        {
+          "article_number": "4",
+          "title": "Հոդված 4.\tԻրավասու մարմնի կամ մարմինների գործառույթները",
+          "score": 0.7507583975791932
+        },
+        {
+          "article_number": "54",
+          "title": "Հոդված 54.\tՕպերատորների և ծառայություններ մատուցողների իրավունքները և պարտականությունները",
+          "score": 0.7393641114234925
+        },
+        {
+          "article_number": "48",
+          "title": "Հոդված 48.\tԳծերի վարձակալության ծառայությունները",
+          "score": 0.7384479880332947
+        },
+        {
+          "article_number": "60",
+          "title": "Հոդված 60.\t Դադարեցման կարգադրություն արձակելու իրավասությունը",
+          "score": 0.7208065271377564
+        },
+        {
+          "article_number": "2",
+          "title": "Հոդված 2.\tՍույն օրենքում օգտագործվող հասկացությունները",
+          "score": 0.717690372467041
+        },
+        {
+          "article_number": "34",
+          "title": "Հոդված 34.\tՓոխկապակցման թույլատրելի մեխանիզմները",
+          "score": 0.7008379936218262
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 50.9918111s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}",
+          "latency_seconds": 0.531,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "error",
+          "answer": "Error: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01m3hm0b95e4avhrk1dg6n9z95` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8866, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "latency_seconds": 0.171,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Կարգավորողի իրավասությունները և լիազորությունները նախատեսված են հիմնականում սույն օրենքի 6-րդ հոդվածում և այլ համապատասխան կանոնակարգիչ նորմերում։ Պարզ և կոնկրետ՝\n\n- ընդունել որոշումներ, սահմանել կանոններ, կարգեր և հրամաններ (Հոդված 6, մաս 2, կետ 1).  \n- լուծել վեճեր ոչ գերիշխող օպերատորների, ոչ գերիշխողների և վերջնական օգտագործողների միջև, ինչպես նաև ծառայությունների մատուցման մեջ ոչ գերիշխողների և վերջնական օգտագործողների միջև՝ շուկայի մրցակցության, ծառայությունների որակի և հաշվարկված դրույքաչափերի պահպանման նպատակով (Հոդված 6, մաս 2, կետ 2).  \n- կազմակերպել իր գործառույթների վերաբերյալ հանրային լսումներ և նիստեր (Հոդված 6, մաս 2, կետ 3): Կարգավորողն ունի ազատություն ընտրելու կիրառելի լսման/վարույթի ձևը, կարող է՝ բայց պարտադիր չէ՝ անցկացնել դատական ոճով լսումներ; պարտավոր է կողմերին հնարավորություն տալ բանավոր/գրավոր ապացույցներ ներկայացնելու, խաչաձև հարցաքննելու և այլն (Հոդված 6, մաս 3).  \n- ձեռք բերել իր գործառույթների կատարմանն առնչվող տեղեկատվություն և անցկացնել ուսումնասիրություններ ու հետազոտություններ (Հոդված 6, մաս 2, կետ 4 և 5).  \n- լիազորել ներկայացուցչին մուտք գործելու այն շենքերը/շինությունները, որոնք օգտագործվում են հանրային էլեկտրոնային հաղորդակցության ծառայությունների մատուցման կամ ցանցի շահագործման նպատակով (Հոդված 6, մաս 2, կետ 6).  \n- նախաձեռնել վարչական վարույթ լիցենզավորված անձի նկատմամբ օրենսդրության պահանջների չկատարման համար (Հոդված 6, մաս 2, կետ 7).  \n- սեփական նախաձեռնությամբ կամ կողմերից որևէ մեկի դիմումի հիման վրա միջամտել վեճերին՝ փոխկապակցման պայմանների/սակագների հստակեցման և ոլորտում արդյունավետ համագործակցության ու առավելագույն տնտեսական արդյունավետության ապահովման նպատակով (Հոդված 6, մաս 2, կետ 8).  \n- օրենքով նախատեսված դեպքերում գանձել վճարներ (Հոդված 6, մաս 2, կետ 9).  \n- պարտավոր է յուրաքանչյուր որոշման կամ իրավական ակտի համար գրավոր հիմնավորում ներկայացնել և այն մատչելի դարձնել հանրության համար (Հոդված 6, մաս 4).  \n- կարող է կազմակերպել վեճերի լուծման գործընթացը համապատասխանաբար գործարար սովորույթներին և արդարադատության սկզբունքներին համապատասխան, ինքնուրույն կազմակերպել աշխատանքների առաջնահերթությունները և ռեսուրսների բաշխումը (Հոդված 6, մաս 5).\n\nԱվելացուցիչ իրավասություններ օրենքի այլ հոդվածներից՝\n\n- պահանջել և վերահսկել գերիշխող օպերատորների փոխկապակցման օրինակելի առաջարկները, ստանալ փոխկապակցման պայմանագրերի օրինակները և անհրաժեշտության դեպքում մերժել, կասեցնել կամ փոխել դրանք; որոշել փոխկապակցման պայմաններն և դրույքաչափերը կամ գործել որպես վեճի կարգավորիչ (Հոդված 34, մաս 1–3 և 2):  \n- կանոնակարգել և սահմանել գծերի վարձակալության ծառայությունների համար որոշ պայմաններ գերիշխող օպերատորների համար (Հոդված 48, մաս 2):  \n- շնորհիվ իրավասության՝ արձակել դադարեցման կարգադրություն այն անձի նկատմամբ, ով շահագործում է հանրային էլեկտրոնային հաղորդակցության չլիցենզավորված ցանց կամ մատուցում է չլիցենզավորված ծառայություններ, ըստ սույն օրենքի կարգի (Հոդված 60, մաս 1–6).\n\n(Նկատում՝ վերոհիշյալը հստակ վերցված է միայն տրամադրված նորմատիվ տեքստից՝ Հոդվածներ 6, 34, 48 և 60-ի համաձայն.)",
+          "latency_seconds": 18.251,
+          "ttft_seconds": 9.582,
+          "total_response_time_seconds": 18.25,
+          "input_tokens": 7712,
+          "output_tokens": 1855,
+          "total_tokens": 9567,
+          "estimated_cost_usd": 0.005638,
+          "cited_articles": [
+            "6",
+            "34",
+            "48",
+            "60"
+          ],
+          "correct_citations": [
+            "6"
+          ],
+          "citation_accuracy": 0.25,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "What is the obligation to provide interconnection?",
+      "expected_articles": [
+        "33"
+      ],
+      "retrieved_articles": [
+        "33",
+        "34",
+        "37",
+        "5",
+        "36",
+        "2",
+        "25"
+      ],
+      "matched_articles": [
+        "33"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "33",
+          "title": "Հոդված 33.\tՓոխկապակցում տրամադրելու պարտավորությունը",
+          "score": 0.8342473983764649
+        },
+        {
+          "article_number": "34",
+          "title": "Հոդված 34.\tՓոխկապակցման թույլատրելի մեխանիզմները",
+          "score": 0.7724007606506348
+        },
+        {
+          "article_number": "37",
+          "title": "Հոդված 37.\tՓոխկապակցման վճարների հիմքում ընկած սկզբունքները",
+          "score": 0.7473570585250855
+        },
+        {
+          "article_number": "5",
+          "title": "Հոդված 5.\tԿարգավորողի գործառույթները",
+          "score": 0.6794325590133667
+        },
+        {
+          "article_number": "36",
+          "title": "Հոդված 36.\tԳերիշխող օպերատորի պարտականությունները",
+          "score": 0.6766865491867066
+        },
+        {
+          "article_number": "2",
+          "title": "Հոդված 2.\tՍույն օրենքում օգտագործվող հասկացությունները",
+          "score": 0.6412551641464234
+        },
+        {
+          "article_number": "25",
+          "title": "Հոդված 25.\tԳերիշխող օպերատորների պարտավորությունները գծի ենթակառուցվածքների նկատմամբ",
+          "score": 0.6344187796115875
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 31.895597588s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}",
+          "latency_seconds": 0.616,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "error",
+          "answer": "Error: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01m3hm0b95e4avhrk1dg6n9z95` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9366, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "latency_seconds": 0.141,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Պետական պարտավորությունը (պարտքը)՝ փոխկապակցում տրամադրելու վերաբերյալ\n\n- Ընդհանուր պարտավորություն. յուրաքանչյուր օպերատոր պարտավոր է պահանջի հիման վրա փոխկապակցել իր հանրային էլեկտրոնային հաղորդակցության ցանցը մյուս օպերատորի հանրային էլեկտրոնային հաղորդակցության ցանցին (այսինքն՝ փոխկապակցում ապահովել) (Հոդված 33, մաս 1):՝ Հոդված 33:\n\n- Փոխկապակցման տրամադրման սկզբունքները (Հոդված 33, մաս 2)\n  - «յուրաքանչյուրը յուրաքանչյուրի հետ»՝ ապահովել, որ յուրաքանչյուր ցանցի բոլոր հաճախորդները համապատասխան այլ ցանցերի բոլոր հաճախորդների հետ կարողանան հաղորդակցվել կամ ստանալ ծառայություններ:\n  - «վերջնակետից վերջնակետ»՝ ապահովել, որ մեկ ցանցի ցանկացած հաճախորդին մյուս օպերատորը կարողանա մատուցել ծառայություններ:\n  - փոխկապակցող օպերատորները հավասար պատասխանատվություն կրում են փոխկապակցումը ողջամիտ ժամկետներում ապահովելու համար:\n\n- Փոխկապակցման թույլատրելի մեխանիզմներ և կարգը (Հոդված 34)\n  - գերիշխող օպերատորները պարտավոր են Կարգավորողին ներկայացնել փոխկապակցման օրինակելի առաջարկ (առաջարկներ, պայմաններ):\n  - փոխկապակցման պայմանները կարող են սահմանվել կողմերի պայմանագրով կամ Կարգավորողի հաստատած օրինակելի առաջարկով կամ, հակամարտության դեպքում, արբիտրաժային կարգավորման միջոցով:\n\n- Գերիշխող օպերատորի հատուկ պարտավորություններ (Հոդված 36)\n  - փոխկապակցման պայմանները ոչ խտրական, ողջամիտ և թափանցիկ պետք է լինեն; տեխնիկական պայմաններն ու կետերի թվաքանակը/գտնելու վայրը պետք է ողջամիտ լինեն:\n  - ժամկետներ՝ օրինակելի առաջարկի համաձայն` առավել դանդաղը 45 օր, փոխկապակցման պայմանագրի դեպքում` առավել ուշ 2 ամիս (հատուկ դեպքերում կողմերը կարող են պայմանավորվել խելամիտ ժամկետների մասին):\n  - գերիշխող օպերատորը պարտավոր է տրամադրել դիմող օպերատորին փոխկապակցման համար անհրաժեշտ տեղեկատվությունը, օգտագործել այն միայն փոխկապակցման նպատակով, չհրապարակել (բացառությամբ օրենքով կանխատեսված դեպքերի), նախապես ծանուցել տեխնիկական/աշխատքների փոփոխությունների մասին:\n  - վարել առանձին հաշիվներ՝ Կարգավորողին հնարավորություն տալու համար գնահատելու փոխկապակցման համապատասխանությունը; թույլատրել արտակարգ ծառայությունների կարճ կոդերի ծառայությունների ապահովումը (Հոդված 36, մասեր 2–3):\n\n- Փոխկապակցման վճարների սկզբունքները (Հոդված 37)\n  - վճարները պետք է ծածկեն փոխկապակցված ցանցերի ծախսերը՝ ներառելով օբյեկտիվ (ստրուկտուրալ) և շահութաբերություն ապահովող բաղադրիչներ;\n  - վճարները պետք է հաշվվեն ծախսերի հավասար և ողջամիտ բաշխման սկզբունքներով, չգերազանցեն անհրաժեշտ ծախսերի ծավալը; գերիշխող օպերատորները պետք է հրապարակեն վճարները և հաշվարկման մեթոդները, վճարները պետք է թափանցիկ լինեն և ապացուցման մարմնին ենթարկվեն:\n\nՀղումներ՝ Հոդված 33, Հոդված 34, Հոդված 36, Հոդված 37:\n\n(եթե պատասխանվող հարցի համար նշված հոդվածները բավարար չեն՝ տեղեկացրեք՝ \"Պատասխանը չի գտնվել տրամադրված օրենքի համապատասխան հատվածներում։\")",
+          "latency_seconds": 17.528,
+          "ttft_seconds": 9.182,
+          "total_response_time_seconds": 17.528,
+          "input_tokens": 8212,
+          "output_tokens": 1623,
+          "total_tokens": 9835,
+          "estimated_cost_usd": 0.005299,
+          "cited_articles": [
+            "33",
+            "34",
+            "36",
+            "37"
+          ],
+          "correct_citations": [
+            "33"
+          ],
+          "citation_accuracy": 0.25,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "How does the law regulate the use of radio frequencies?",
+      "expected_articles": [
+        "17",
+        "19"
+      ],
+      "retrieved_articles": [
+        "17",
+        "19",
+        "18",
+        "10",
+        "64",
+        "11",
+        "9"
+      ],
+      "matched_articles": [
+        "17",
+        "19"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "17",
+          "title": "Հոդված 17.\tՌադիոհաճախականությունների տիրույթի հատկացումը",
+          "score": 0.8585684537887573
+        },
+        {
+          "article_number": "19",
+          "title": "Հոդված 19.\tՌադիոհաճախականությունների օգտագործումը",
+          "score": 0.8378131031990051
+        },
+        {
+          "article_number": "18",
+          "title": "Հոդված 18.\tԱռկա օգտագործողները",
+          "score": 0.7942759037017822
+        },
+        {
+          "article_number": "10",
+          "title": "Հոդված 10.\tԼիցենզիայի և թույլտվությունների համար դիմելու կարգը",
+          "score": 0.7913671970367432
+        },
+        {
+          "article_number": "64",
+          "title": "Հոդված 64.\tԱռկա լիցենզիաների պահպանումը",
+          "score": 0.780925178527832
+        },
+        {
+          "article_number": "11",
+          "title": "Հոդված 11.\tԼիցենզիայում և թույլտվությունում փոփոխությունները",
+          "score": 0.726160728931427
+        },
+        {
+          "article_number": "9",
+          "title": "Հոդված 9.\tԲացառիկ իրավունքները և արտոնությունները",
+          "score": 0.7260802030563355
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 13.685677383s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '13s'}]}}",
+          "latency_seconds": 0.479,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "**Ռադիոհաճախականությունների օգտագործման կարգը սահմանված է հետևյալ հոդվածներով.**\n\n- **Ռադիոհաճախականությունների հատկացում** (հոդված 17)\n  - Ցանցի շահագործման կամ ծառայություն մատուցելու համար ռադիոհաճախականությունների օգտագործումը պահանջում է համապատասխան **թույլտվություն** (17.1).  \n  - Կարգավորողը, «Լիցենզավորման մասին» օրենքի և այս օրենքի 10-րդ հոդվածի համաձայն, պետք է հատկացնի ռադիոհաճախականությունները՝ նպատակների իրականացման համար (17.2).  \n  - Կարգավորողը կարող է հրավիրել դիմումներ և տրամադրել թույլտվություններ՝ միայն այն անձանց, ովքեր ունեն կամ կարող են ստանալ ցանցի լիցենզիա (17.3‑17.4).  \n  - Թույլտվությունների տրամադրման կարգը, այդ թվում՝ հատկացման մեթոդները, տեխնիկական, ֆինանսական և իրավական պահանջները, պետք է սահմանվի խորհրդակցելով համապատասխան մարմինների հետ (17.5).\n\n- **Ռադիոհաճախականությունների օգտագործման պարտավորություններ** (հոդված 19)  \n  - Թույլտվություն ունեցող յուրաքանչյուր անձ պետք է հետևի թույլտվության պայմաններին և Կարգավորողի հրահանգներին:\n\n- **Առկա օգտագործողների իրավունքները** (հոդված 18)  \n  - Նախկինում տրամադրված թույլտվությունները մնում են ուժի մեջ ամբողջ օգտագործման ժամանակահատվածի ընթացքում:\n\n- **Թույլտվությունների և լիցենզիայի համար դիմելու կարգը** (հոդված 10)  \n  - Դիմումները պետք է ներկայացվեն Կարգավորողի սահմանած ձևով, ներառելով «Լիցենզավորման մասին» օրենքի պահանջվող տեղեկությունները և վճարները (10.2).  \n  - Եթե թույլտվությունների քանակը սահմանափակ է, դրանք կարող են տրամադրվել մրցույթով կամ աճուրդի միջոցով (10.1, 10.2).  \n  - Կարգավորողը պետք է կատարի համապատասխան գործողություններ՝ դիմումի ներկայացնելուց վեց շաբաթվա ընթացքում (10.3).\n\n- **Թույլտվության փոփոխություն** (հոդված 11)  \n  - Լիցենզիա կամ ռադիոհաճախականության օգտագործման թույլտվության փոփոխության համար դիմումը ներկայացվում է նույն կարգով, ինչ սկզբնական ձեռքբերման համար:\n\n- **Բացառիկ իրավունքների և արտոնությունների սահմանափակում** (հոդված 9)  \n  - Բացառիկ իրավունքների և արտոնությունների, ինչպես նաև ռադիոհաճախականությունների օգտագործման թույլտվությունների, շնորհումը արգելվում է, բացառությամբ 5-րդ հոդվածի 2-րդ կետի «իզ» ենթակետի և 10-րդ հոդվածի դեպքերի (9.1).  \n  - Նախկինում տված բացառիկ իրավունքները և թույլտվությունները մնում են ուժի մեջ, եթե չեն կասեցվում, դադարեցվում կամ փոփոխվում օրենքի կամ լիցենզիայի կարգով (9.2).\n\n**Ապահովում**՝ ռադիոհաճախականությունների օգտագործումը կարգավորված է՝ պահանջելով թույլտվություն, սահմանելով Կարգավորողի իրավունքները հատկացում, տրամադրում և վերահսկում թույլտվությունները, և պարտավորելով օգտագործողներին հետևել պայմաններին և հրահանգներին: (հոդվածներ 17, 18, 19, 10, 11, 9)",
+          "latency_seconds": 2.527,
+          "ttft_seconds": 0.897,
+          "total_response_time_seconds": 2.526,
+          "input_tokens": 3055,
+          "output_tokens": 930,
+          "total_tokens": 3985,
+          "estimated_cost_usd": 0.001016,
+          "cited_articles": [
+            "17",
+            "19",
+            "18",
+            "10",
+            "11",
+            "9"
+          ],
+          "correct_citations": [
+            "17",
+            "19"
+          ],
+          "citation_accuracy": 0.333,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Ընդգծվում է, որ ռադիոհաճախականությունների օգտագործումն կարգավորվում է հետևյալ հրամաններով և սկզբունքներով.\n\n- Ռադիոհաճախականություններ օգտագործելու համար պարտադիր է համապատասխան օգտագործման թույլտվություն. առանց դրա էլեկտրոնային հաղորդակցության ցանցի շահագործում կամ ծառայության մատուցում չի թույլատրվում (Հոդված 17.1): Հղում՝ Հոդված 17.1:\n\n- Ռադիոհաճախականությունները հատկացնելու, այդ թվում՝ նպատակային հատվածներ տրամադրելու և առանձնակի թույլտվություններ սահմանելու իրավասությունը պատկանում է Կարգավորողին; Կարգավորողը պարտավոր է նաև, ըստ «Լիցենզավորման մասին» օրենքի և այս օրենքի 10-րդ հոդվածի, իրականացնել հատկացումները (Հոդված 17.2, 17.4, 17.5): Հղում՝ Հոդված 17.2, 17.4, 17.5:\n\n- Կարգավորողը կարող է հայտերի ընդունման մասին հայտարարություններ անել և մրցութային դիմումներ կամ աճուրդներ կազմակերպել, եթե ռադիոհաճախականությունների քանակը սահմանափակ է (Հոդված 17.3; Հոդված 10.1): Հղում՝ Հոդված 17.3; Հոդված 10.1:\n\n- Կարգավորողը պարտավոր է սահմանել ռադիոհաճ_frequencyների օգտագործման թույլտվությունների տրման կարգը՝ ներառելով հատկացման մեթոդները և տեխնիկական, ֆինանսական եւ իրավական պահանջները (Հոդված 17.5): Հղում՝ Հոդված 17.5:\n\n- Կարգավորողը պետք է օրենքի գործողության մեջ մտնելուց մեկ տարվա ընթացքում ընդունի կանոններ չլիցենզավորված՝ ցածր հզորության սարքերի (որոնք ճառագայթում են ռադիոհաճախականության) շահագործման թույլտվության կարգի մասին և կարող է պահանջել այդ սարքավորումների ստուգում/հավաստագրում (Հոդված 17.2): Հղում՝ Հոդված 17.2:\n\n- Հայտեր ներկայացնելու, դրանց հրապարակման, գաղտնիքի կանոնների, գումարի երաշխավորությունների, մրցույթների/աճուրդների հրապարակման և բողոքարկման կարգերը կանարագրվում են 10-րդ հոդվածով՝ ներառելով ժամկետների և հրապարակման պահանջների նորմերը (Հոդված 10.2–10.8): Հղում՝ Հոդված 10.2–10.8:\n\n- Ցանցի լիցենզիայի համար դիմողը կարող է միաժամանակ դիմել նաև ռադիոհաճախականությունների օգտագործման թույլտվության համար, եւ Կարգավորողը կարող է զուգահեռաբար շնորհել երկուսն էլ (Հոդված 17.4): Հղում՝ Հոդված 17.4:\n\n- Ցանկացած ռադիոհաճախականությունների օգտագործման թույլտվության հատկացումից հետո թույլտվության տեր անձը պարտավոր է կատարվել դրա պայմանները և հետեւել Կարգավորողի հրահանգներին (Հոդված 19): Հղում՝ Հոդված 19:\n\n- Նախկինում օրենքի համաձայն տրված թույլտվություններ և լիցենզիաներ շարունակում են մնալ ուժի մեջ իրենց գործող համընդգրկուն ժամանակահատվածում (Հոդված 18; Հոդված 64.1), իսկ լիցենզիայում կամ թույլտվությունում փոփոխություններն իրականացվում են նույն կարգով, որով դրանք ստացվել են (Հոդված 11): Հղում՝ Հոդված 18; Հոդված 64.1; Հոդված 11:\n\n- Ընդհանուր սկզբունքով բացառիկ իրավունքների և արտոնությունների, այդ թվում՝ ռադիոհաճախականությունների օգտագործման բացառիկ թույլտվությունների շնորհումը արգելվում է, բացառությամբ օրենքով սահմանված հատուկ դեպքերի (Հոդված 9): Հղում՝ Հոդված 9:\n\nԵթե Ձեզ անհրաժեշտ է ավելի ստուգված հտրամաձայնություն կամ կոնկրետ ընթացակարգի մանրամասներ, խնդրում եմ նշել, թե որ մասի մասին եք մանրամասն տեղեկություն ցանկանում։",
+          "latency_seconds": 14.113,
+          "ttft_seconds": 6.025,
+          "total_response_time_seconds": 14.113,
+          "input_tokens": 2971,
+          "output_tokens": 1558,
+          "total_tokens": 4529,
+          "estimated_cost_usd": 0.003859,
+          "cited_articles": [
+            "17",
+            "10",
+            "19",
+            "18",
+            "64",
+            "11",
+            "9"
+          ],
+          "correct_citations": [
+            "17",
+            "19"
+          ],
+          "citation_accuracy": 0.286,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "What rules apply to interconnection between electronic communications networks?",
+      "expected_articles": [
+        "33",
+        "34",
+        "35"
+      ],
+      "retrieved_articles": [
+        "33",
+        "34",
+        "39",
+        "5",
+        "37",
+        "44",
+        "35"
+      ],
+      "matched_articles": [
+        "33",
+        "34",
+        "35"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "33",
+          "title": "Հոդված 33.\tՓոխկապակցում տրամադրելու պարտավորությունը",
+          "score": 0.7501054048538208
+        },
+        {
+          "article_number": "34",
+          "title": "Հոդված 34.\tՓոխկապակցման թույլատրելի մեխանիզմները",
+          "score": 0.7464131355285645
+        },
+        {
+          "article_number": "39",
+          "title": "Հոդված 39.\tՏեղադրումը",
+          "score": 0.7359233140945435
+        },
+        {
+          "article_number": "5",
+          "title": "Հոդված 5.\tԿարգավորողի գործառույթները",
+          "score": 0.6874116897583008
+        },
+        {
+          "article_number": "37",
+          "title": "Հոդված 37.\tՓոխկապակցման վճարների հիմքում ընկած սկզբունքները",
+          "score": 0.6564287185668946
+        },
+        {
+          "article_number": "44",
+          "title": "Հոդված 44.\tՎերջնակետային սարքավորումները",
+          "score": 0.6334412097930908
+        },
+        {
+          "article_number": "35",
+          "title": "Հոդված 35.\tՓոխկապակցման օրինակելի առաջարկները",
+          "score": 0.6092781662940979
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 56.355998908s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '56s'}]}}",
+          "latency_seconds": 0.617,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "Էլեկտրոնային հաղորդակցության ցանցերի փոխկապակցման վերաբերյալ հիմնական կանոնները սահմանված են հետևյալ հոդվածներում.\n\n**1. Փոխկապակցում տրամադրելու պարտավորություն և սկզբունքներ**  \n*Հոդված 33*  \n- Յուրաքանչյուր օպերատոր պետք է պահանջի հիման վրա կապի իր ցանցը այլ օպերատորի ցանցի հետ (կետ 1).  \n- Փոխկապակցումը պետք է իրականացվի՝  \n  1) «յուրաքանչյուրը յուրաքանչյուրի հետ» սկզբունքով՝ բոլոր հաճախորդները կարող են հաղորդակցվել մյուս ցանցերի բոլոր հաճախորդների հետ;  \n  2) «վերջնակետից վերջնակետ» սկզբունքով՝ մեկ ցանցի ցանկացած հաճախորդին հասանելի լինի մյուս ցանցի ծառայությունները;  \n  3) փոխկապակցող կողմերը հավասար պատասխանատվություն են կրում փոխկապակցումը ժամկետներում ապահովելու համար (կետ 2).\n\n**2. Փոխկապակցման թույլատրելի մեխանիզմները**  \n*Հոդված 34*  \n- Գերիշխող (դոմինանտ) օպերատորները պետք է Կարգավորողին ներկայացնեն փոխկապակցման օրինակելի առաջարկ (պակետ 1).  \n- Երկու կողմերի համաձայնությամբ պայմանագրով (պակետ 2) կամ Կարգավորողի հաստատած օրինակելի առաջարկով (պակետ 3) կարող են սահմանվել պայմանները և գները:  \n- Ոչ գերիշխող օպերատորները կարող են օգտագործել պայմանագրի կամ օրինակելի առաջարկի դրույքաչափերը (պակետ 4‑5).  \n\n**3. Փոխկապակցման օրինակելի առաջարկների պահանջները**  \n*Հոդված 35*  \n- Գերիշխող օպերատորները պետք է ներկայացնեն օրինակելի առաջարկ, որը ներառում է՝ վավերականության ժամկետ, ծառայությունների նկարագրություն, գծերի պատվիրում, տրաֆիկի կառավարում, անվտանգության միջոցառումներ, տեխնիկական ստանդարտներ, վճարահաշվարկի պայմաններ և այլն (պակետ 3).  \n- Առաջարկը պետք է հաստատվի Կարգավորողի կողմից, իսկ այնjärel կարող է կիրառվել (պակետ 2‑3).  \n\n**4. Փոխկապակցման վճարների հաշվարկի սկզբունքները**  \n*Հոդված 37*  \n- Վճարները պետք է ծածկեն փոխկապակցված ցանցերի ծախսերը, ներառյալ սարքավորումների, ենթակառուցվածքի վարձակալությունը, անբաժանելի համատեղ աշխատանքը և լրացուցիչ ծառայությունները (պակետ 1).  \n- Վճարները հաշվարկվում են՝ հիմնված ծախսերի արդար բաժանման, օգտագործման վրա հիմնված և համարժեք եկամտի ստացման սկզբունքների վրա (պակետ 2‑3).  \n- Գերիշխող օպերատորների կողմից սահմանված վճարները պետք է լինեն թափանցիկ, հրապարակային և չպետք է կախված լինեն հաղորդակցության տեսակից (պակետ 4‑5).  \n\n**5. Կարգավորողի դերը**  \n*Հոդված 5* (պատասխանատու բաժին)  \n- Կարգավորողը մշակել է «փոխկապակցման կարգավորող կանոնակարգեր» (պակետ 5‑զ) և հաստատում է օրինակելի առաջարկները (պակետ 5‑ժ).  \n\n**Ամփոփում**  \nՓոխկապակցման համար կիրառվում են հետևյալ կանոնները.  \n- Օպերատորների պարտավորությունը տրամադրել փոխկապակցում ըստ պահանջի, հետևելով «յուրաքանչյուրը յուրաքանչյուրի հետ», «վերջնակետից վերջնակետ» և հավասար պատասխանատվության սկզբունքներին (Հ.33).  \n- Գերիշխող օպերատորների պարտավորությունը ներկայացնել օրինակելի առաջարկ, որի պայմանները և գները կարող են հաստատվել Կարգավորողի կողմից, իսկ ոչ գերիշխող կողմերը կարող են օգտագործել պայմանագրեր կամ Կարգավորողի հաստատած օրինակելի առաջարկներ (Հ.34, Հ.35).  \n- Վճարների հաշվարկը պետք է լինի ծախսերի արդար բաժանման, թափանցիկ, հրապարակային և չկախված ծառայության տեսակից (Հ.37).  \n- Կարգավորողը հաստատում և վերահսկում է այդ կանոնների կիրառումը (Հ.5).  \n\nԱյս հոդվածների (33, 34, 35, 37, 5) դրույթները միասին կազմում են այն կանոնները, որոնք կիրառվում են հանրային էլեկտրոնային հաղորդակցության ցանցերի փոխկապակցման համար։",
+          "latency_seconds": 22.06,
+          "ttft_seconds": 19.373,
+          "total_response_time_seconds": 22.06,
+          "input_tokens": 6087,
+          "output_tokens": 1227,
+          "total_tokens": 7314,
+          "estimated_cost_usd": 0.001649,
+          "cited_articles": [
+            "33",
+            "34",
+            "35",
+            "37",
+            "5"
+          ],
+          "correct_citations": [
+            "33",
+            "34",
+            "35"
+          ],
+          "citation_accuracy": 0.6,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Փոխկապակցման կարգը և դրան վերաբերող կանոնները կարգավորվում են գլխավոր հաշվով հետևյալ դրույթներով.\n\n- Փոխկապակցում տրամադրելու պարտավորություն՝ պահանջի վրա. յուրաքանչյուր օպերատոր պետք է ըստ պահանջի փոխկապակցի իր հանրային ցանցը մյուսների հետ (հինգ կարևոր սկզբունքներ՝ «յուրաքանչյուրը յուրաքանչյուրի հետ», «վերջնակետից‑վերջնակետ», հավասար պատասխանատվություն՝ փոխկապակցման ժամանակացույցի վերաբերյալ) (Հոդված 33):\n\n- Փոխկապակցման թույլատրելի մեխանիզմներ և վարքագիծ՝ գերիշխող և ոչ գերիշխող օպերատորների համար՝\n  - գերիշխող օպերատորները պարտավոր են Կարգավորողին ներկայացնել փոխկապակցման օրինակելի առաջարկ(ներ), իսկ կողմերի համաձայնությամբ պայմանագրեր կարող են գերակշռել այդ առաջարկների նկատմամբ; Կարգավորողը ստուգում/հաստատում/պետք է ստանա օրինակելի առաջարկների և պայմանագրերի օրինակները (Հոդված 34, Հոդված 35):\n  - ոչ գերիշխող օպերատորների հետ փոխկապակցումը կարող է կարգավորվել կողմերի միջև կնքված պայմանագրով կամ Կարգավորողի հաստատած օրինակելի առաջարկով (Հոդված 34):\n\n- Փոխկապակցման օրինակելի առաջարկի պահանջվող բովանդակությունը՝ ինչ պետք է ներառի առաջարկը (վավերականության ժամկետ, ծառայությունների նկարագրություն, գծերի պատվեր, տրաֆիկի գնահատում, անվտանգության միջոցներ, տեխնիկական ստանդարտներ, փոխկապակցման կետերի տեղամասեր, համարների օգտագործում, վճարահաշվարկ, վեճերի լուծում, վերաշինարարություն, կողմերի պատասխանատվություն և այլն) (Հոդված 35):\n\n- Ժամկետներ. գերիշխող օպերատորը պետք է երաշխավորի, որ դիմողին կտրամադրի փոխկապակցում պայմաններին համաձայնության դեպքում ոչ ուշ քան 45 օրվա ընթացքում՝ ինչպես նախատեսված է օրինակելի առաջարկում (Հոդված 35.4):\n\n- Փոխկապակցման վճարների սկզբունքներ՝ ինչից են կազմված վճարները, ինչպես հաշվարկվում և առանձնացվում են ծախսերը, պարտավորություններ գերիշխող օպերատորի նկատմամբ (ծախսերի բաշխում՝ ըստ երկարաժամկետ/ապագա և ընթացիկ ծախսերի, թափանցիկություն, հրապարակայնություն, հաշվարկման մեթոդների հրապարակում, վճարները չպետք է գերազանցեն անհրաժեշտը և չպետք է ներառեն ընդհանուր ծախսերի կրկնակի հատուցում), եւ կարգավորողի հնարավոր միջամտությունը՝ միջազգային չափանիշների ընդունում կամ լրացուցիչ կանոններ (Հոդված 37):\n\n- Տեղադրում և ենթակառուցվածք՝ օպերատորը պարտավոր է ողջամիտ դրույքաչափերով և պայմաններով ապահովել այլ օպերատորին անհրաժեշտ սարքավորումների տեղադրումը իր տարածքում, տրամադրել համապատասխան ենթակառուցվածք, էլեկտրաէներգիա, խաչաձև կապակցումներ և կարող է տրամադրել վիրտուալ դասավորումներ՝ տեխնիկական պատճառներով (Հոդված 39):\n\n- Կարգավորողի դերը՝ փոխկապակցման կանոնակարգերի մշակում, օրինակելի առաջարկների հաստատում, դրույքաչափերի սահմանում, վեճերի կարգավորում և ընթացակարգերի սահմանում, փոխկապակցման վճարների և պայմանների վերահսկում (Հոդված 5, մասեր՝ հատկապես զ), ժզ, ժթ և այլն):\n\n- Վերջնակետային սարքավորումների միացում. օպերատորը պարտավոր է թույլատրել պատշաճ սերտիֆիկացված վերջնակետային սարքավորումների միացումն իր ցանցին, բացառությամբ նրա հիմնավորման, որը պետք է հաստատվի Կարգավորողի կողմից՝ եթե տվյալ միացումն սպառնում է ցանցին (Հոդված 44):\n\nԵթե այս ամփոփման մեջ որևէ կոնկրետ հարցի շուրջ մանրամասներ են պետք (օր.՝ փոխկապակցման վճարների հաշվարկային մեթոդաբանությունը կամ օրինակելի առաջարկի կոնկրետ դրույթների տեքստը), նշեք՝ կհամապատասխանեմ իրազեկագրային հստակման համար։",
+          "latency_seconds": 17.525,
+          "ttft_seconds": 7.827,
+          "total_response_time_seconds": 17.525,
+          "input_tokens": 6003,
+          "output_tokens": 1657,
+          "total_tokens": 7660,
+          "estimated_cost_usd": 0.004815,
+          "cited_articles": [
+            "33",
+            "34",
+            "35",
+            "37",
+            "39",
+            "5",
+            "44"
+          ],
+          "correct_citations": [
+            "33",
+            "34",
+            "35"
+          ],
+          "citation_accuracy": 0.429,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "What protections does the law provide for users of electronic communications services?",
+      "expected_articles": [
+        "43",
+        "45"
+      ],
+      "retrieved_articles": [
+        "3",
+        "45",
+        "44",
+        "17",
+        "31",
+        "55",
+        "5"
+      ],
+      "matched_articles": [
+        "45"
+      ],
+      "retrieval_accuracy": 0.5,
+      "sources": [
+        {
+          "article_number": "3",
+          "title": "Հոդված 3.\tՕրենքի գործողության շրջանակները",
+          "score": 0.8497495293617249
+        },
+        {
+          "article_number": "45",
+          "title": "Հոդված 45.\tԾառայությունների մատուցման սահմանափակումը և կասեցումը",
+          "score": 0.8091638326644898
+        },
+        {
+          "article_number": "44",
+          "title": "Հոդված 44.\tՎերջնակետային սարքավորումները",
+          "score": 0.7940637111663819
+        },
+        {
+          "article_number": "17",
+          "title": "Հոդված 17.\tՌադիոհաճախականությունների տիրույթի հատկացումը",
+          "score": 0.7932502269744873
+        },
+        {
+          "article_number": "31",
+          "title": "Հոդված 31.\tՍակագնային կարգավորման ենթակա ծառայություններ մատուցողներին ներկայացվող լրացուցիչ պահանջները",
+          "score": 0.7882078528404236
+        },
+        {
+          "article_number": "55",
+          "title": "Հոդված 55.\tՎերջնական օգտագործողների իրավունքները և պարտականությունները",
+          "score": 0.7758640885353089
+        },
+        {
+          "article_number": "5",
+          "title": "Հոդված 5.\tԿարգավորողի գործառույթները",
+          "score": 0.775636100769043
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 16.1814728s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}",
+          "latency_seconds": 0.529,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "**Օգտագործողների (վերջնական օգտագործողների) համար օրենքը ապահովում է հետևյալ պաշտպանությունները.**\n\n- **Հավասար և ազատ օգտագործման իրավունք**  \n  - Վերջնական օգտագործողը իրավունք ունի հավասար հիմունքներով օգտվել հանրային էլեկտրոնային հաղորդակցության ծառայություններից (Հոդված 55, պ.1).\n\n- **Վճարների և ծառայությունների մասին տեղեկատվություն**  \n  - Օգտագործողը իրավունք ունի ստանալ մանրամասն հաշիվ‑ապրանքագրեր, որտեղ նշված են մատուցված ծառայությունների վճարները (Հոդված 55, պ.1).\n\n- **Վճարից ազատություն չսակագնով կամ պայմանագրով չնշված ծառայությունների համար**  \n  - Օգտագործողը կարող է հրաժարվել վճարելու այն ծառայությունների համար, որոնք սակագնով կամ ծառայությունների մատուցման պայմանագրով չեն նշված (Հոդված 55, պ.1).\n\n- **Էլեկտրոնային հաղորդակցության գաղտնիության իրավունք**  \n  - Օգտագործողը ունի գաղտնիության իրավունք (Հոդված 55, պ.1).\n\n- **Անհրաժեշտ է օգտագործել սերտիֆիկացված վերջնակետային սարքավորումներ**  \n  - Օպերատորը պետք է թույլատրի միայն սերտիֆիկացված, հաճախորդի տարածքում գտնվող վերջնակետային սարքավորումների միացում (Հոդված 44, պ.1).  \n  - Օգտագործողը պարտավոր է չօգտագործել չսերտիֆիկացված սարքավորումներ (Հոդված 55, պ.2).\n\n- **Անհրաժեշտության դեպքում ծառայության սահմանափակման և կասեցման պաշտպանություն**  \n  - Սպասարկողը չի կարող սահմանափակել կամ կասեցնել ծառայությունը, եթե օգտագործողը վերացնում է սահմանափակման կամ կասեցման հիմքում ընկած հանգամանքները (Հոդված 45, պ.3).  \n  - Սպասարկողը պետք է ծանուցի օգտագործողին առնվազն 5 աշխատանքային օր առաջ (եթե հնարավոր չէ, պետք է գրավոր) (Հոդված 45, պ.2).  \n  - Անհրաժեշտության դեպքում, եթե սահմանափակումը կամ կասեցումը անխուսափելի է, ծանուցում չի պահանջվում (Հոդված 45, պ.2).  \n  - Սպասարկողը պարտավոր է ապահովել, որ սահմանափակման կամ կասեցման դեպքում օգտագործողը կարողանա զանգահարել ոստիկանություն, շտապ բուժօգնություն, հրշեջ և փրկարարական ծառայություններ (Հոդված 45, պ.4).  \n  - Եթե օգտագործողը գրավոր բողոքարկում է վճարների մասին, ծառայությունը չի կարող սահմանափակվել կամ կասեցվել (Հոդված 45, պ.5).  \n  - Օպերատորը կամ ծառայություն մատուցողը պետք է վերականգնի ծառայությունը երկու օրվա ընթացքում, եթե ընդհատումը տեղի է ունեցել նրա պատճառով (Հոդված 45, պ.6).  \n  - Օգտագործողը իրավունք ունի միակողմանի կասեցնել ծառայությունը (համար 1 ամսից մինչև 1 տարի)՝ նախապես ծանուցելով մատուցողին առնվազն 10 օր առաջ (Հոդված 45, պ.7).  \n  - Վերջնական օգտագործողը կարող է դադարեցնել ծառայությունը առանց նախապես ծանուցելու, սակայն պետք է հանձնել սակագնի կամ պայմանագրի պայմանները (Հոդված 45, պ.11).\n\n- **Անհատական և արտակարգ իրավիճակներում սարքավորումների մատչելիություն**  \n  - Արտակարգ իրավիճակներում օգտագործողը պարտավոր է մատչելի դարձնել իր վերջնակետային սարքավորումները՝ ոստիկանություն, շտապ բուժօգնություն, հրշեջ և փրկարարական ծառայությունների հետ կապվելու համար (Հոդված 44, պ.5).\n\n- **Անհատական տվյալների և գաղտնիության պաշտպանություն**  \n  - Օգտագործողը ունի էլեկտրոնային հաղորդակցության գաղտնիության իրավունք (Հոդված 55, պ.1).\n\nԱյս բոլոր դրույթները (հղված են համապատասխան հոդվածների՝ 55, 44, 45) ապահովում են, որ վերջնական օգտագործողը ստանում է հավասար, անվտանգ, տեղեկացված և անխախտելի ծառայություն, իսկ ծառայություն մատուցողը պետք է հետևի սահմանված սահմանափակումների, ծանուցումների, վերականգնման և արտակարգ ծառայությունների մատուցման պարտականություններին։",
+          "latency_seconds": 41.973,
+          "ttft_seconds": 39.65,
+          "total_response_time_seconds": 41.973,
+          "input_tokens": 6764,
+          "output_tokens": 1295,
+          "total_tokens": 8059,
+          "estimated_cost_usd": 0.001792,
+          "cited_articles": [
+            "55",
+            "44",
+            "45"
+          ],
+          "correct_citations": [
+            "45"
+          ],
+          "citation_accuracy": 0.333,
+          "citation_completeness": 0.5,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Սույն օրենքը օգտվողների (վերջնական օգտագործողների) պաշտպանության համար նախատեսում է մի շարք երաշխիքներ և իրավունքներ. հիմնականը՝\n\n- Հասանելիության և հավասարության իրավունք — վերջնական օգտագործողները իրավունք ունեն հավասար հիմնունքներով օգտվել հանրային էլեկտրոնային հաղորդակցության ծառայություններից (Հ հոդված 55.1.1):  \n- Վճարների վերաբերյալ թափանցկություն — օգտագործողը իրավունք ունի ստանալ մատուցված ծառայությունների վճարների մասին մանրամասն հաշիվ-ապրանքագրեր (Հ հոդված 55.1.2), Կարգավորողը վերահսկում և պահանջատերն է սակագնային կարգավորման ենթակա ծառայությունների ծախսային հաշվառման և հաշվետվությունների օրինականությունն ու թափանցիկությունը (Հ հոդված 31):  \n- Ապահովվածություն չարտահայտված ծառայությունների դիմաց վճարումից հրաժարվելու վերաբերյալ — օգտագործողը կարող է հրաժարվել ծառայությունների սակագնով կամ պայմանագրով չնշված ծառայությունների դիմաց վճարելուց (Հ հոդված 55.1.3):  \n- Էլեկտրոնային հաղորդակցության գաղտնիություն — վերջնական օգտագործողը ունի հաղորդակցության գաղտնիության իրավունք (Հ հոդված 55.1.4):  \n- Սպառնալու և կասեցման պաշտպանության միջոցներ՝ ծառայությունների սահմանափակում/կասեցում իրականացնելու պայմաններ և երաշխիքներ՝  \n  - ծառայությունները սահմանափակելու կամ կասեցնելու համար մատուցողը պարտավոր է նախապես տեղեկացնել բաժանորդին (առնվազն 5 աշխատանքային օրով), բացառությամբ անհապաղ անհրաժեշտ դեպքերի (Հ հոդված 45.2),  \n  - բաժանորդը կարող է վերացնել սահմանափակման հիմքը մինչև սահմանափակումը և արդյունքում սահմանափակումը հարցում չի կիրառվի (Հ հոդված 45.3),  \n  - եթե բաժանորդը գրավոր բողոքարկում է վճարը ժամանակնից առաջ և վճարում է չվիճարկվող մասը՝ մատուցողը չի կարող ծառայությունը սահմանափակել կամ կասեցնել դրա համար (Հ հոդված 45.5),  \n  - ծառայությունների կասեցման պայմանները և կասեցման հետևանքները սահմանված են (Հ հոդված 45.9–45.10):  \n- Արտակարգ իրավիճակներում կապի պահպանում — սահմանափակում/կասեցում իրականացնելու դեպքում ծառայություններ մատուցողը պարտավոր է տեխնիկապես հնարավոր լինելու պարագայում ապահովել, որ բաժանորդը կարողանա զանգահարել ոստիկանություն, շտապ բուժօգնություն, հրշեջ և փրկարարական ծառայություններ (Հ հոդված 45.4); բարոյալուց՝ ցանցերը պետք է նախագծվեն այդ կարճ կոդերի միջոցով զանգերի հնարավորությունը ապահովելու համար (Հ հոդված 44.4):  \n- Վերջնակետային սարքավորումների կապման իրավունքներ — օպերատորը թույլատրում է պատշաճ կերպով սերտիֆիկացված վերջնակետային սարքավորումների միացումն իր ցանցին, եթե միայն օպերատորը մոտիվացված կերպով և Կարգավորողի սահմանած կարգով հիմնավորի հակառակը (Հ հոդված 44.1), իսկ բաժանորդին պետք է տրվի նրանց միացումնուց անմիջապես հետո սարքավորումները օգտագործելու հնարավորություն (Հ հոդված 44.3):  \n- Սպասարկումի որակի և վերականգնման երաշխիքներ — օպերատորի պատճառած ընդհատման դեպքերում օպերատորը պարտավոր է վերականգնել ծառայությունը ընդհատման պատճառի վերացումից հետո երկու օրվա ընթացքում (Հ հոդված 45.6); Կարգավորողը պարտավոր է սահմանել ծառայությունների որակի չափանիշներ և վերահսկել դրանց կիրառումը (Հ հոդված 5.2.ը):  \n- Կարգավորողի տեղական պաշտպանության գործառույթներ — Կարգավորողը պարտավոր է ապահովել մրցակցություն, հաճախորդների համար առավել նպաստավոր ընտրություն, վերահսկել սակագները և գործարկել վիճահարույց հարցերի լուծման մեխանիզմներ՝ ներառյալ վեճերի լուծումը օպերատորների և վերջնական օգտագործողների միջև, ներդնել պատժամիջոցներ կարգի խախտումների համար և սահմանել հաշվետվության ու հաշվապահության չափանիշներ` ծառայությունների մատուցման օրինականությունը և օգտվողների շահերը պաշտպանելու նպատակով (Հ հոդված 5):  \n- Սակագնային կարգավորման ու աուդիտի մեխանիզմներ՝ կարգավորման ենթակա ծառայություններ մատուցողների ծախսերի հաշվարկի և հաշվետվությունների պարտադիրության միջոցով ապահովում են, որ վճարները հիմնված լինեն ծախսերի վրա և հանրության հետաքրքրությունները պաշտպանված լինեն (Հ հոդված 31):\n\nԵթե ցանկանում եք կոնկրետ मामला‑երկխոսության վերաբերյալ կիրառելի իրավունքներ կամ ընթացակարգեր (օր.՝ հաշվի բողոքարկում, ծառայության կասեցման վիճահարույց դեպք), նշեք դեպքի մանրամասները՝ որպեսզի առաջնորդվեմ օրենքի համապատասխան հոդվածներով:",
+          "latency_seconds": 20.474,
+          "ttft_seconds": 9.258,
+          "total_response_time_seconds": 20.474,
+          "input_tokens": 6680,
+          "output_tokens": 2050,
+          "total_tokens": 8730,
+          "estimated_cost_usd": 0.00577,
+          "cited_articles": [
+            "55",
+            "31",
+            "45",
+            "44",
+            "5"
+          ],
+          "correct_citations": [
+            "45"
+          ],
+          "citation_accuracy": 0.2,
+          "citation_completeness": 0.5,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "About dominance",
+      "expected_articles": [
+        "22",
+        "23"
+      ],
+      "retrieved_articles": [
+        "22",
+        "2",
+        "36",
+        "6",
+        "43",
+        "48",
+        "24"
+      ],
+      "matched_articles": [
+        "22"
+      ],
+      "retrieval_accuracy": 0.5,
+      "sources": [
+        {
+          "article_number": "22",
+          "title": "Հոդված 22.\tԳերիշխող դիրքը",
+          "score": 0.635152393579483
+        },
+        {
+          "article_number": "2",
+          "title": "Հոդված 2.\tՍույն օրենքում օգտագործվող հասկացությունները",
+          "score": 0.6242926955223084
+        },
+        {
+          "article_number": "36",
+          "title": "Հոդված 36.\tԳերիշխող օպերատորի պարտականությունները",
+          "score": 0.6094436287879944
+        },
+        {
+          "article_number": "6",
+          "title": "Հոդված 6.\tԿարգավորողի իրավասությունները",
+          "score": 0.58804931640625
+        },
+        {
+          "article_number": "43",
+          "title": "Հոդված 43.\tԱռանց խտրականության, անընդհատ ծառայություններ մատուցելը",
+          "score": 0.5634288430213928
+        },
+        {
+          "article_number": "48",
+          "title": "Հոդված 48.\tԳծերի վարձակալության ծառայությունները",
+          "score": 0.5618369817733765
+        },
+        {
+          "article_number": "24",
+          "title": "Հոդված 24.\tԵրաշխիքները",
+          "score": 0.5506718993186951
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 13.080386857s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '13s'}]}}",
+          "latency_seconds": 0.595,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "error",
+          "answer": "Error: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01m3hm0b95e4avhrk1dg6n9z95` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8532, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "latency_seconds": 0.138,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Սացողություն՝ գերիշխող դիրքի մասին հիմնականը՝\n\n- Գերիշխող դիրքի սահմանումը՝ անձն ունի գերիշխող դիրք, եթե այդ շուկայում որպես մատակարար կամ սպառող չունի որևէ մրցակից կամ չի հանդիպում էական մրցակցության, կամ նրա շրջանառությունը կազմում է առնվազն ընդհանուր շուկայի մեկ երրորդը (Հոդված 22):\n\nԳերիշխող օպերատորի պարտականությունները և սահմանափակումները՝\n\n- Փոխկապակցում պետք է տրամադրվի ոչ խտրական, ողջամիտ և թափանցիկ սկզբունքներով; պայմանները պետք է ներառեն համապատասխան սկզբունքներով հաշվարկվող վճարները (Հոդված 36.1.1):\n  - Փոխկապակցումը՝ փոխկապակցման առաջարկի շրջանակներում՝ համաձայնության դեպքում պետք է են իրականացվի ոչ ուշ քան 45 օրվա մեջ, իսկ փոխկապակցման պայմանագրի դեպքում՝ դիմումից հետո երկու ամսվա ընթացքում (արտակարգ դեպքերում՝ խելամիտ ժամկետների համաձայն) (Հոդված 36.1.2):\n  - Գերիշխողը պարտավոր է տրամադրել փոխկապակցման համար անհրաժեշտ տեղեկատվություն և օգտագործել ստացված տեղեկությունները միայն փոխկապակցում տրամադրելու նպատակով՝ երրորդ անձանց չհրապարակելով, բացառությամբ օրենքով նախատեսված դեպքերի (Հոդված 36.1.3–4):\n  - Պետք է նախապես ծանուցել փոխկապակցված օպերատորներին ցանցի տեխնիկական ստանդարտների կամ աշխատանքային առանձնահատկությունների փոփոխությունների մասին (Հոդված 36.1.5):\n  - Պայմանները պետք է նույնական լինեն նրան կամ իրեն փոխկապակցված անձին տվող պայմաններին (Հոդված 36.1.6):\n  - Խաչաձև ֆինանսավորումը (cross‑subsidization) թույլատրվող չէ (Հոդված 36.1.7):\n  - Փոխկապակցման ծառայությունների տարանջատումը, եթե տեխնիկապես և տնտեսապես ողջամիտ է, պետք է թույլ տար, որպեսզի դիմողը չվճարի ցանցի իրեն չպետք բերակվող բաղադրիչների համար (Հոդված 36.1.8):\n\n- Արտահանման առանձին հաշվետվություններ՝ յուրաքանչյուր գերիշխող օպերատոր պարտավոր է վարել առանձին հաշիվներ՝ Կարգավորողին թույլ տալու համար գնահատել փոխկապակցման ծառայությունների համապատասխանությունը (Հոդված 36.2):\n\n- Ճանապարհ դեպի արտակարգ ծառայություններ՝ գերիշխողը պարտավոր է թույլ տալ այլ օպերատորներին ուղղել իրենց սպառողների զանգերը իր սարքավորումներին` ներառյալ ոստիկանություն, շտապօգնություն և այլն (Հոդված 36.3):\n\nԿարգավորողի իրավունքներն ու միջոցները՝\n\n- Կարգավորողը կարող է ընդունել որոշումներ, կանոններ, լուծել վեճեր (ներառ. փոխկապակցման վեճեր), ձեռք բերել տեղեկատվություն, անցկացնել ուսումնասիրություններ և նախաձեռնել վարչական վարույթ լիցենզավորված անձի նկատմամբ (Հոդված 6.1–7, 6.8): (Գործողություններն իրականացնելու ընթացքում Կարգավորողը պարտավոր է հիմնավորել իր որոշումները և տրամադրել դրանց հրապարակման հիմքերը՝ հանրության համար) (Հոդված 6.4):\n\nՄրցակցությունը երաշխավորելու միջոցներ՝\n\n- Կարգավորողը կարող է սահմանել մրցակցության երաշխավորման կանոններ, որոնց միջոցով՝ անհրաժեշտության դեպքում՝ պահանջել, որ գերիշխողը`\n  - մատուցի հանրային պարտքերը միայն կառուցվածքով առանձնացված դուստր ընկերությունների միջոցով,\n  - կառուցվածքային առումով առանձնացնի գերիշխող գործունեությունը,\n  - սահմանափակի գործարքների, տեղեկատվության փոխանակման կամ աշխատողների համատեղումը,\n  - և, եթե այլ միջոցները չեն հերիքում, պահանջել խզել տնտեսական կապերը որոշ փոխկապակցված անձանց հետ (Հոդված 24.1):\n- Կարգավորողն իրավասու է մշակել ուղեցույցներ և պետք եղած դեպքում հրապարակել մրցակցության երաշխավորման կանոնները (Հոդված 24.2–3):\n\nԳծերի վարձակալության (line‑rental) և ծառայության շարունակականության հիմնական դրույթներ՝\n\n- Բոլոր գերիշխող օպերատորները (բացառությամբ շարժական կապի օպերատորների) պարտավոր են գծերի վարձակալության ծառայություններ մատուցել օրենքով նախատեսված կարգով (Հոդված 48.1):\n- Կարգավորողը կարգավորելու է գծերի վարձակալության ծառայության պայմանները, և գերիշխողն իր տարեկան հաշվետվությամբ պետք է ներկայացնի ծառայությունների մատուցման կատարման մասին տվյալներ (Հոդված 48.2–3):\n- Սակագիններում կամ պայմանագրերում պետք է կանոնակարգվեն տեխնիկական ստանդարտները, ծառայության մատուցման վերջնաժամկետները, սպասարկում‑անվտանգության ընթացակարգերը, վճարները և այլն (Հոդված 48.4):\n- Գծերի վարձակալության ծառայության մատուցողը չի կարող ծառայությունը պայմանել վերջնական օգտագործողի պլանավորվող օգտագործման բնույթով կամ հարցումներ կատարել այդ մասին (Հոդված 48.5):\n- Օպերատորը իրավունք ունի սահմանափակումներ դնել միայն օրենքով սահմանված և կոնկրետ հանգամանքներում՝ օրինակ՝ վճարումների ուշացում, ցանցի աշխատանքների կարիք, արտակարգ իրավիճակներ կամ Կարգավորողի եզրակացությամբ հակաօրինական օգտագործում; կիրառվող սահմանափակումների դեմ վերջնական օգտագործողը կարող է բողոքարկել Կարգավորողին (Հոդված 48.6–11):\n\n- Ծառայություններ մատուցողները պարտավոր են ծառայություններ մատուցել ոչ խտրական կերպով, նոր հաճախորդներին ողջամիտ ժամկետներում (Կարգավորողն սահմանում է պատվերի առավելագույնը 10 օր), և որոշ դեպքերում կարգավորողը կարող է պարտադրել շարունակել լիցենզավորված պարտավորությունները՝ ծառայության դադարեցումը կանխելու համար (Հոդված 43):\n\nԵթե պահանջվող տեղեկությունը կամ նորմատիվը տվյալ մասերում չկա՝\n\n- Եթե ձեր հարցի նրբություններն ավարտագծված չեն վերոնշյալ հոդվածներով կամ պահանջում են լրացուցիչ մանրամասներ, ապա պատասխանը չի գտնվել տրամադրված օրենքի համապատասխան հատվածներում։\n\nԵթե ուզում եք, կարող եմ անկացած հատվածներով տալ համառոտ հղումներ կամ փակի օրինակներ՝ ինչպե՞ս դիմել Կարգավորողին կամ ինչպես բողոքարկել սահմանափակում՝ ըստ վերոհիշյալ կարգադրումների:",
+          "latency_seconds": 26.45,
+          "ttft_seconds": 11.729,
+          "total_response_time_seconds": 26.45,
+          "input_tokens": 7153,
+          "output_tokens": 2689,
+          "total_tokens": 9842,
+          "estimated_cost_usd": 0.007166,
+          "cited_articles": [
+            "22",
+            "36",
+            "6",
+            "24",
+            "48",
+            "43"
+          ],
+          "correct_citations": [
+            "22"
+          ],
+          "citation_accuracy": 0.167,
+          "citation_completeness": 0.5,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "What is the corporate income tax rate in Armenia?",
+      "expected_articles": [],
+      "retrieved_articles": [
+        "37",
+        "32",
+        "31",
+        "1",
+        "55",
+        "66",
+        "30"
+      ],
+      "matched_articles": [],
+      "retrieval_accuracy": null,
+      "sources": [
+        {
+          "article_number": "37",
+          "title": "Հոդված 37.\tՓոխկապակցման վճարների հիմքում ընկած սկզբունքները",
+          "score": 0.43026729822158816
+        },
+        {
+          "article_number": "32",
+          "title": "Հոդված 32.\tՆերդրումների եկամտաբերության ողջամիտ մակարդակը",
+          "score": 0.391649067401886
+        },
+        {
+          "article_number": "31",
+          "title": "Հոդված 31.\tՍակագնային կարգավորման ենթակա ծառայություններ մատուցողներին ներկայացվող լրացուցիչ պահանջները",
+          "score": 0.3741497337818146
+        },
+        {
+          "article_number": "1",
+          "title": "Հոդված 1.\tՕրենքի նպատակները",
+          "score": 0.37217658162117007
+        },
+        {
+          "article_number": "55",
+          "title": "Հոդված 55.\tՎերջնական օգտագործողների իրավունքները և պարտականությունները",
+          "score": 0.36852132678031924
+        },
+        {
+          "article_number": "66",
+          "title": "Հոդված 66.\tԱնցումային դրույթներ",
+          "score": 0.36804670095443726
+        },
+        {
+          "article_number": "30",
+          "title": "Հոդված 30.\tԶեղչերը",
+          "score": 0.33971484899520876
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 45.963729187s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}",
+          "latency_seconds": 0.459,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "Պատասխանը չի գտնվել տրամադրված օրենքի համապատասխան հատվածներում։",
+          "latency_seconds": 0.827,
+          "ttft_seconds": 0.78,
+          "total_response_time_seconds": 0.827,
+          "input_tokens": 4587,
+          "output_tokens": 101,
+          "total_tokens": 4688,
+          "estimated_cost_usd": 0.000749,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": 0,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Պատասխանը չի գտնվել տրամադրված օրենքի համապատասխան հատվածներում։",
+          "latency_seconds": 3.828,
+          "ttft_seconds": 3.372,
+          "total_response_time_seconds": 3.828,
+          "input_tokens": 4503,
+          "output_tokens": 337,
+          "total_tokens": 4840,
+          "estimated_cost_usd": 0.0018,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": 0,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "Որքա՞ն է Հայաստանի Հանրապետությունում բջջային ինտերնետի միջին ամսական արժեքը։",
+      "expected_articles": [],
+      "retrieved_articles": [
+        "15",
+        "41",
+        "66",
+        "23",
+        "46",
+        "22",
+        "4"
+      ],
+      "matched_articles": [],
+      "retrieval_accuracy": null,
+      "sources": [
+        {
+          "article_number": "15",
+          "title": "Հոդված 15.\tՊահանջվող լիցենզիան",
+          "score": 0.525798499584198
+        },
+        {
+          "article_number": "41",
+          "title": "Հոդված 41.\tՀայաստանի Հանրապետության համարագրման պլանը",
+          "score": 0.507846611738205
+        },
+        {
+          "article_number": "66",
+          "title": "Հոդված 66.\tԱնցումային դրույթներ",
+          "score": 0.4668866991996765
+        },
+        {
+          "article_number": "23",
+          "title": "Հոդված 23.\tԳերիշխող դիրքի մասին որոշման կայացումը",
+          "score": 0.4509611129760742
+        },
+        {
+          "article_number": "46",
+          "title": "Հոդված 46.\tՀաճախորդների սպասարկումը",
+          "score": 0.43689799308776855
+        },
+        {
+          "article_number": "22",
+          "title": "Հոդված 22.\tԳերիշխող դիրքը",
+          "score": 0.428358256816864
+        },
+        {
+          "article_number": "4",
+          "title": "Հոդված 4.\tԻրավասու մարմնի կամ մարմինների գործառույթները",
+          "score": 0.4177318215370178
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 40.922740421s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}",
+          "latency_seconds": 0.322,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "success",
+          "answer": "Պատասխանը չի գտնվել տրամադրված օրենքի համապատասխան հատվածներում։",
+          "latency_seconds": 11.045,
+          "ttft_seconds": 11.009,
+          "total_response_time_seconds": 11.045,
+          "input_tokens": 3726,
+          "output_tokens": 121,
+          "total_tokens": 3847,
+          "estimated_cost_usd": 0.000632,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": 0,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Պատասխանը չի գտնվել տրամադրված օրենքի համապատասխան հատվածներում։\n\nՕրենսգրքում բջջային ինտերնետի միջին ամսական արժեքը չեն մատնանշված; օրինական արձանագրությունում միայն կան դրույթներ, որոնք պահանջում են օպերատորների գործառնական գրասենյակներում սակագների պատճենների առկայությունը (հանրապետության օրենքի Հոդված 46):",
+          "latency_seconds": 12.277,
+          "ttft_seconds": 11.159,
+          "total_response_time_seconds": 12.277,
+          "input_tokens": 3642,
+          "output_tokens": 1217,
+          "total_tokens": 4859,
+          "estimated_cost_usd": 0.003344,
+          "cited_articles": [
+            "46"
+          ],
+          "correct_citations": [],
+          "citation_accuracy": 0,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    },
+    {
+      "question": "Explain how the Regulator's functions and powers work together when regulating electronic communications.",
+      "expected_articles": [
+        "5",
+        "6"
+      ],
+      "retrieved_articles": [
+        "6",
+        "4",
+        "5",
+        "2",
+        "44",
+        "60",
+        "34"
+      ],
+      "matched_articles": [
+        "5",
+        "6"
+      ],
+      "retrieval_accuracy": 1,
+      "sources": [
+        {
+          "article_number": "6",
+          "title": "Հոդված 6.\tԿարգավորողի իրավասությունները",
+          "score": 0.9664326429367065
+        },
+        {
+          "article_number": "4",
+          "title": "Հոդված 4.\tԻրավասու մարմնի կամ մարմինների գործառույթները",
+          "score": 0.9261253595352172
+        },
+        {
+          "article_number": "5",
+          "title": "Հոդված 5.\tԿարգավորողի գործառույթները",
+          "score": 0.8981839895248414
+        },
+        {
+          "article_number": "2",
+          "title": "Հոդված 2.\tՍույն օրենքում օգտագործվող հասկացությունները",
+          "score": 0.8672450065612793
+        },
+        {
+          "article_number": "44",
+          "title": "Հոդված 44.\tՎերջնակետային սարքավորումները",
+          "score": 0.7850541710853577
+        },
+        {
+          "article_number": "60",
+          "title": "Հոդված 60.\t Դադարեցման կարգադրություն արձակելու իրավասությունը",
+          "score": 0.7797981381416321
+        },
+        {
+          "article_number": "34",
+          "title": "Հոդված 34.\tՓոխկապակցման թույլատրելի մեխանիզմները",
+          "score": 0.7698009252548218
+        }
+      ],
+      "results": [
+        {
+          "provider": "gemini",
+          "status": "error",
+          "answer": "Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash\\nPlease retry in 17.032024182s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}",
+          "latency_seconds": 0.499,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "groq",
+          "status": "error",
+          "answer": "Error: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01m3hm0b95e4avhrk1dg6n9z95` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9497, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "latency_seconds": 0.135,
+          "ttft_seconds": null,
+          "total_response_time_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "cited_articles": [],
+          "correct_citations": [],
+          "citation_accuracy": null,
+          "citation_completeness": null,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": null
+        },
+        {
+          "provider": "openai",
+          "status": "success",
+          "answer": "Կարճ պատասխան — Կարգավորողի գործառույթներն (ինչը նա պարտավոր է ապահովել) և նրան տրված իրավասությունները (չի իման, թե ինչով կարող է դա իրականացնել) մեկ ամբողջության մեջ աշխատում են՝ հնարավոր դարձնելով օրենքով նախատեսված նպատակների հասնելը՝ մրցակցության ապահովում, ցանցերի և ծառայությունների կարգավորում, տեխնիկական ռեսուրսների կառավարում և վերահսկողություն։\n\nԻնչպես են դրանք միասին գործում (մասնակի օրինակներ՝ հղումներով)\n\n- Գործառույթների բնույթը՝ ինչ է պետք ապահովել.\n  - Կարգավորողը պարտավոր է ապահովել մրցակցություն, պետական քաղաքականություն մոնիթորինգ, հանրային էլեկտրոնային հաղորդակցության ցանցերի և ծառայությունների կարգավորում, լիցենզավորման կարգավորումներ, փոխկապակցման կանոններ, դրույքաչափեր, որակական չափանիշներ, հաշվապահական պահանջներ և պատժամիջոցներ (Հոդված 5, մաս 1 և 2 — ամբողջական ցուցակը):\n\n- Իրավասությունները՝ այն գործիքները, որոնցով այդ նպատակները իրականացվում են.\n  - Կարգավորողը կարող է ընդունել որոշումներ, կանոններ և կարգեր; լուծել վեճեր; կազմակերպել լսումներ; ձեռք բերել տեղեկատվություն; իրականացնել ուսումնասիրություններ; մուտք գործել համապատասխան շենքեր; նախաձեռնել վարչական վարույթներ; միջամտել փոխկապակցման վեճերին; գանձել վճարներ և այլն (Հոդված 6, 2-րդ մաս, կետ 1–9):\n\n- Օրինաչափ կապը՝ օրինակներ.\n  - Մրցակցության ապահովում (Հոդված 5, 1): Կարգավորողը դա իրականացնում է կանոններ ընդունելով և կիրառելով, վերհանելով մրցակցության խանգարումները, ստուգումներ և աուդիտներ անցկացնելով, պահանջելով տեղեկատվություն և լուծելով վեճեր (Հոդված 6, 2-րդ մաս, կետ 1, 2, 4–5)։  \n  - Լիցենզավորման և ռեսուրսների կառավարում (Հոդված 5, 2 բ, ժդ): Կարգավորողը սահմանում է դիմումի և տրամադրման ընթացակարգերը և տնօրինում է ռադիոհաճախականությունների, համարների և արբանյակային հատվածների օգտագործումը, իսկ նրա իրավասությունների թվում են տեղեկատվություն պահանջելը, ուսումնասիրություններ վարելը և շինություններին մուտք գործելու լիազորումը՝ կատարման վերահսկողության համար (Հոդված 6, 2-րդ մաս, կետ 4–6):  \n  - Փոխկապակցում և պայմանների հստակեցում (Հոդված 5, 2 զ, ժզ; Հոդված 34): Կարգավորողը կարող է հաստատել փոխկապակցման օրինակելի առաջարկներ և միջամտել վեճերին. նրան տրված են վեճեր լուծելու և փոխկապակցման պայմաններ սահմանելու իրավասություններ (Հոդված 6, 2-րդ մաս, կետ 2 և 8; Հոդված 34):  \n  - Պատժամիջոցների կիրառում և գործառութային վերահսկողություն (Հոդված 5, 2 ժբ): Կարգավորողը կարող է կիրառել տույժեր, լիցենզիայի փոփոխում/կասեցում և, անհրաժեշտության դեպքում, դատարան ներկայացնել դադարեցման պահանջ, իսկ այդ իրավունքը ուղեկցվում է վարչարարական վարույթ սկսելու և դադարեցման կարգադրություն արձակելու գործիքներով (Հոդված 6, 2-րդ մաս, կետ 7; Հոդված 60):\n\n- Տեղի ունեցող գործընթացների կառավարում և թափանցիկություն.\n  - Կարգավորողը իր լուծումներն ու իրավական ակտերի հիմնավորումները պետք է գրավոր ներկայացնի և հրապարակայնորեն մատչելի դարձնի (Հոդված 6, 4)։ Լուծումներ ընդունելիս նա կարող է որոշել վարույթի տեսակը՝ լսումներ կազմակերպել կամ չկազմակերպել, սակայն պարտավոր է կողմերին հնարավորություն տալ ներկայացնելու ապացույցներ և մասնակցելու (Հոդված 6, 3)։ Նա կարող է նաև իր աշխատանքները կազմակերպել ըստ առաջնայնությունների և ռեսուրսների բաշխել (Հոդված 6, 5)։\n\n- Համատեղ աշխատանք իրավասու մարմնի հետ.\n  - Տեխնիկական ստանդարտների ընդունման և ռադիոհաճախականությունների կառավարման հարցերում Կարգավորողը համագործակցում է իրավասու մարմնի հետ՝ խորհրդակցություններ և առաջարկներ կազմելով (Հոդված 4, կետ 9; Հոդված 5, 2 իե)։\n\nԸնդհանուր տեսակետով՝ Հոդված 5-ն ուղղում է, թե ինչ նպատակներ պետք է իրականացվեն և ինչ գործառույթներ պետք է իրականացվեն, իսկ Հոդված 6-ը ապահովում է այդ նպատակներ իրականացնելու գործընթացային և իրավական գործիքները (նիստեր, տեղեկատվություն ստանալ, ստուգումներ, միջամտություններ, պատժամիջոցներ, հիմնավորում և հրապարակայնություն)՝ գործընթացի օրինական, թափանցիկ և արդյունավետ իրականացումն ապահովելու համար (Հոդված 5; Հոդված 6; Հոդված 60; Հոդված 34; Հոդված 44)։",
+          "latency_seconds": 28.512,
+          "ttft_seconds": 15.9,
+          "total_response_time_seconds": 28.512,
+          "input_tokens": 8186,
+          "output_tokens": 2650,
+          "total_tokens": 10836,
+          "estimated_cost_usd": 0.007347,
+          "cited_articles": [
+            "5",
+            "6",
+            "34",
+            "60",
+            "4",
+            "44"
+          ],
+          "correct_citations": [
+            "5",
+            "6"
+          ],
+          "citation_accuracy": 0.333,
+          "citation_completeness": 1,
+          "unsupported_citations": [],
+          "unsupported_citation_rate": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armenian Legal Q&A</title>
+    <link rel="stylesheet" href="/static/style.css">   
+  
+</head>
+
+<body>
+ 
+<div class="container">
+    <h1>Armenian Legal Q&A Assistant</h1>
+<div class="tabs">
+    <button class="tab-button active" onclick="showTab('qa')">
+        Q&A
+    </button>
+
+    <button class="tab-button" onclick="showTab('benchmark')">
+        Benchmark
+    </button>
+</div>
+
+<div id="qa-tab" class="tab-content active"> 
+<p class="subtitle">
+        ՀՀ էլեկտրոնային հաղորդակցության մասին օրենք
+    </p>
+    <textarea  id="question"
+        placeholder="Ask a question in Armenian or English..."
+    ></textarea>
+    <button onclick="askQuestion()">
+        Ask Question
+    </button>
+    <div id="loading" class="hidden">
+        Searching the law and generating an answer...
+    </div>
+    <div id="result" class="hidden">
+        <h2>Answer</h2>
+        <div id="answer"></div>
+        <h2>Sources</h2>
+    <div id="sources"></div>
+    </div>
+</div>
+ <div id="benchmark-tab" class="tab-content">
+
+    <h2>LLM Benchmark</h2>
+
+    <p>
+        Compare the same RAG question across multiple LLM providers.
+    </p>
+
+    <textarea
+        id="benchmark-question"
+        placeholder="Enter a benchmark question in Armenian or English..."
+    ></textarea>
+<h3>Benchmark Test Questions</h3>
+<select id="benchmark-question-select"
+        onchange="selectBenchmarkQuestion()">
+    <option value="">
+        Select a test question...
+    </option>    
+    <option value="Ի՞նչ լիցենզիա է պահանջվում։(Դիմելու կարգը)">
+        2. Ի՞նչ լիցենզիա է պահանջվում։(Դիմելու կարգը)
+    </option>    
+</select>
+<br>
+    <div class="benchmark-buttons">
+    <button onclick="runBenchmark()">
+        Run Benchmark
+    </button>
+    <button onclick="runAllBenchmarks()">
+        Run All
+    </button>
+    </div>
+    <div id="benchmark-loading" class="hidden">
+        <br/>
+        Running benchmark...
+    </div>
+
+    <div id="benchmark-results"></div>
+
+</div>  
+
+</div>
+<script>
+document.addEventListener(
+    "DOMContentLoaded",
+    loadBenchmarkQuestions
+);
+async function askQuestion() {
+
+    const question =
+        document.getElementById("question").value.trim();
+
+    if (!question) {
+        alert("Please enter a question.");
+        return;
+    }
+
+    const loading =
+        document.getElementById("loading");
+
+    const result =
+        document.getElementById("result");
+
+    loading.classList.remove("hidden");
+    result.classList.add("hidden");
+
+    try {
+
+        const response = await fetch("/ask", {
+            method: "POST",
+
+            headers: {
+                "Content-Type": "application/json"
+            },
+
+            body: JSON.stringify({
+                question: question
+            })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            throw new Error(
+                data.detail || "Request failed"
+            );
+        }
+
+        document.getElementById("answer").textContent =
+            data.answer;
+
+        const sources =
+            document.getElementById("sources");
+
+        sources.innerHTML = "";
+
+        data.sources.forEach(source => {
+
+            const sourceElement =
+                document.createElement("div");
+
+            sourceElement.className = "source";
+
+            sourceElement.textContent =
+                "Հոդված " +
+                source.article_number +
+                " — " +
+                source.title;
+
+            sources.appendChild(sourceElement);
+        });
+
+        result.classList.remove("hidden");
+
+    } catch (error) {
+
+        document.getElementById("answer").textContent =
+            "Error: " + error.message;
+
+        result.classList.remove("hidden");
+
+    } finally {
+
+        loading.classList.add("hidden");
+    }
+}
+function showTab(tabName) {
+
+    const qaTab = document.getElementById("qa-tab");
+    const benchmarkTab = document.getElementById("benchmark-tab");
+
+    const buttons = document.querySelectorAll(".tab-button");
+
+    qaTab.classList.remove("active");
+    benchmarkTab.classList.remove("active");
+
+    buttons.forEach(button => {
+        button.classList.remove("active");
+    });
+
+    if (tabName === "qa") {
+        qaTab.classList.add("active");
+        buttons[0].classList.add("active");
+    } else {
+        benchmarkTab.classList.add("active");
+        buttons[1].classList.add("active");
+    }
+}
+async function loadBenchmarkQuestions() {
+
+    const select =
+        document.getElementById(
+            "benchmark-question-select"
+        );
+
+    try {
+
+        const response =
+            await fetch("/benchmark/questions");
+
+        const data =
+            await response.json();
+
+        if (!response.ok) {
+            throw new Error(
+                "Could not load benchmark questions"
+            );
+        }
+
+        // Remove old hard-coded questions
+        select.innerHTML =
+            '<option value="">Select a test question...</option>';
+
+        data.questions.forEach(item => {
+
+            const option =
+                document.createElement("option");
+
+            option.value =
+                item.question;
+
+            option.textContent =
+                item.id +
+                ". " +
+                item.question;
+
+            select.appendChild(option);
+        });
+
+    } catch (error) {
+
+        console.error(
+            "Benchmark questions error:",
+            error
+        );
+    }
+}
+async function runBenchmark() {
+
+    const question = document
+        .getElementById("benchmark-question")
+        .value
+        .trim();
+
+    if (!question) {
+        alert("Please enter a benchmark question.");
+        return;
+    }
+
+    const loading =
+        document.getElementById("benchmark-loading");
+
+    const results =
+        document.getElementById("benchmark-results");
+
+    loading.classList.remove("hidden");
+    results.innerHTML = "";
+
+    try {
+
+        const response = await fetch("/benchmark", {
+            method: "POST",
+
+            headers: {
+                "Content-Type": "application/json"
+            },
+
+            body: JSON.stringify({
+                question: question
+            })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            throw new Error(
+                data.detail || "Benchmark request failed"
+            );
+        }
+
+        console.log("Benchmark response:", data);
+
+        displayBenchmarkResults(data);
+
+    } catch (error) {
+
+        results.innerHTML =
+            "<p>Error: " + error.message + "</p>";
+
+    } finally {
+
+        loading.classList.add("hidden");
+    }
+}
+function displayBenchmarkResults(data) {
+
+    const container =
+        document.getElementById("benchmark-results");
+
+    container.innerHTML = "";
+
+    const title = document.createElement("h2");
+    title.textContent = "Benchmark Results";
+    container.appendChild(title);
+
+    const question = document.createElement("p");
+    question.textContent =
+        "Question: " + (data.question || "");
+
+    container.appendChild(question);
+
+
+    // -------------------------
+    // PROVIDER RESULTS
+    // -------------------------
+
+    const results = data.results || [];
+
+    results.forEach(item => {
+
+        const card = document.createElement("div");
+        card.className = "benchmark-card";
+
+        const provider = document.createElement("h3");
+        provider.textContent =
+            (item.provider || "Unknown").toUpperCase();
+
+        card.appendChild(provider);
+
+
+        const status = document.createElement("p");
+        status.textContent =
+            "Status: " + (item.status || "unknown");
+
+        card.appendChild(status);
+
+
+        const answer = document.createElement("div");
+        answer.className = "benchmark-answer";
+        answer.textContent =
+            item.answer || "No answer";
+
+        card.appendChild(answer);
+
+
+       // -------------------------
+// BENCHMARK METRICS
+// -------------------------
+
+const metrics = document.createElement("div");
+metrics.className = "benchmark-metrics";
+
+// TTFT
+const ttft = document.createElement("p");
+ttft.textContent =
+    "TTFT: " +
+    (item.ttft_seconds !== null &&
+     item.ttft_seconds !== undefined
+        ? item.ttft_seconds + " seconds"
+        : "N/A");
+metrics.appendChild(ttft);
+
+// Total response time
+const totalTime = document.createElement("p");
+totalTime.textContent =
+    "Total Response Time: " +
+    (item.total_response_time_seconds !== null &&
+     item.total_response_time_seconds !== undefined
+        ? item.total_response_time_seconds + " seconds"
+        : "N/A");
+metrics.appendChild(totalTime);
+
+// Input tokens
+const inputTokens = document.createElement("p");
+inputTokens.textContent =
+    "Input Tokens: " +
+    (item.input_tokens ?? "N/A");
+metrics.appendChild(inputTokens);
+
+// Output tokens
+const outputTokens = document.createElement("p");
+outputTokens.textContent =
+    "Output Tokens: " +
+    (item.output_tokens ?? "N/A");
+metrics.appendChild(outputTokens);
+
+// Total tokens
+const totalTokens = document.createElement("p");
+totalTokens.textContent =
+    "Total Tokens: " +
+    (item.total_tokens ?? "N/A");
+metrics.appendChild(totalTokens);
+
+// Estimated cost
+const cost = document.createElement("p");
+cost.textContent =
+    "Estimated Cost: " +
+    (item.estimated_cost_usd !== null &&
+     item.estimated_cost_usd !== undefined
+        ? "$" + Number(item.estimated_cost_usd).toFixed(6)
+        : "N/A");
+metrics.appendChild(cost);
+
+card.appendChild(metrics);
+
+        container.appendChild(card);
+    });
+
+
+    // -------------------------
+    // RETRIEVED SOURCES
+    // -------------------------
+
+    if (data.sources && data.sources.length > 0) {
+
+        const sourceTitle =
+            document.createElement("h2");
+
+        sourceTitle.textContent =
+            "Retrieved Sources";
+
+        container.appendChild(sourceTitle);
+
+
+        data.sources.forEach(source => {
+
+            const sourceElement =
+                document.createElement("div");
+
+            sourceElement.className =
+                "source";
+
+            sourceElement.textContent =
+                "Հոդված " +
+                source.article_number +
+                " — " +
+                source.title;
+
+            container.appendChild(sourceElement);
+        });
+    }
+}
+function selectBenchmarkQuestion() {
+
+    const select =
+        document.getElementById("benchmark-question-select");
+
+    const textarea =
+        document.getElementById("benchmark-question");
+
+    textarea.value = select.value;
+}
+async function runAllBenchmarks() {
+
+    const select =
+        document.getElementById("benchmark-question-select");
+
+    const loading =
+        document.getElementById("benchmark-loading");
+
+    const results =
+        document.getElementById("benchmark-results");
+
+    const questionBox =
+        document.getElementById("benchmark-question");
+
+    loading.classList.remove("hidden");
+    results.innerHTML = "";
+// Store results from all benchmark questions
+const allBenchmarkResults = [];
+
+
+    // Skip option 0:
+    // "Select a test question..."
+    for (let i = 1; i < select.options.length; i++) {
+
+        const question = select.options[i].value;
+
+        if (!question) {
+            continue;
+        }
+
+        select.selectedIndex = i;
+        questionBox.value = question;
+
+        // Show which question is currently running
+        const title = document.createElement("h2");
+        title.textContent =
+            "Question " + i + ": " + question;
+
+        results.appendChild(title);
+
+        try {
+
+            const response = await fetch("/benchmark", {
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+                    question: question
+                })
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(
+                    data.detail ||
+                    "Benchmark request failed"
+                );
+            }
+            allBenchmarkResults.push(data);
+            // Show the result for this question
+            const resultBlock =
+                document.createElement("pre");
+
+            resultBlock.textContent =
+                JSON.stringify(data, null, 2);
+
+            results.appendChild(resultBlock);
+
+        } catch (error) {
+
+            // IMPORTANT:
+            // Do NOT stop Run All.
+            // Record the error and continue.
+
+            const errorBlock =
+                document.createElement("div");
+
+            errorBlock.className =
+                "benchmark-error";
+
+            errorBlock.textContent =
+                "Error for question " +
+                i +
+                ": " +
+                error.message;
+
+            results.appendChild(errorBlock);
+        }
+    }
+
+
+// --------------------------------
+// FAILURE RATE SUMMARY
+// --------------------------------
+
+const providerStats = {};
+
+allBenchmarkResults.forEach(questionResult => {
+
+    const providerResults =
+        questionResult.results || [];
+
+    providerResults.forEach(item => {
+
+        const provider = item.provider;
+
+        if (!providerStats[provider]) {
+            providerStats[provider] = {
+                total_requests: 0,
+                successful_requests: 0,
+                failed_requests: 0
+            };
+        }
+
+        providerStats[provider].total_requests++;
+
+        if (item.status === "success") {
+            providerStats[provider].successful_requests++;
+        } else {
+            providerStats[provider].failed_requests++;
+        }
+    });
+});
+
+Object.values(providerStats).forEach(stats => {
+
+    stats.failure_rate =
+        stats.total_requests > 0
+            ? stats.failed_requests /
+              stats.total_requests
+            : 0;
+
+    stats.failure_rate_percent =
+        Number(
+            (stats.failure_rate * 100).toFixed(2)
+        );
+});
+
+const summaryTitle =
+    document.createElement("h2");
+
+summaryTitle.textContent =
+    "Failure Rate Summary";
+
+results.appendChild(summaryTitle);
+
+const summaryBlock =
+    document.createElement("pre");
+
+summaryBlock.textContent =
+    JSON.stringify(
+        providerStats,
+        null,
+        2
+    );
+
+results.appendChild(summaryBlock);
+
+// --------------------------------
+// RAW BENCHMARK JSON EXPORT
+// --------------------------------
+
+const exportButton =
+    document.createElement("button");
+
+exportButton.textContent =
+    "Download Raw Benchmark JSON";
+
+exportButton.onclick = function () {
+
+    const exportData = {
+        generated_at: new Date().toISOString(),
+        total_questions: allBenchmarkResults.length,
+        provider_summary: providerStats,
+        benchmark_results: allBenchmarkResults
+    };
+
+    const blob = new Blob(
+        [
+            JSON.stringify(
+                exportData,
+                null,
+                2
+            )
+        ],
+        {
+            type: "application/json"
+        }
+    );
+
+    const url =
+        URL.createObjectURL(blob);
+
+    const link =
+        document.createElement("a");
+
+    link.href = url;
+    link.download =
+        "benchmark_results.json";
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+
+    URL.revokeObjectURL(url);
+};
+
+results.appendChild(exportButton);
+
+    loading.classList.add("hidden");
+}
+</script>
+
+</body>
+</html>
